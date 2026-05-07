@@ -1,7 +1,7 @@
 /* Interactive Story Styling */
 body {
     font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(180deg, #000000, #720202,#720202,#e1a014);
+    background: linear-gradient(180deg, #081234);
     min-height: 100vh;
     margin: 0 auto;
 }
@@ -28,10 +28,10 @@ body {
 #main-title {
     font-size: 3.8rem;
     font-weight: 700;
-    color: #e1a014;
+    color: #ffffff;
     letter-spacing: -1px;
-    text-shadow: 0 0 10px #72020200;
-    text-transform: lowercase;
+    text-shadow: 0 0 10px #e9da88b0;
+    text-transform: uppercase;
 }
 
 #story-container {
