@@ -390,6 +390,6 @@ startButton.addEventListener("click", function(){
     document.getElementById("start-button-holder").style.display = "none";
 
     // Die Geschichte beginnt
-    nextStory("brawlStarsSpielen");
+    nextStory("bintroduction");
 });
 

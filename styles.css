@@ -1,7 +1,7 @@
 /* Interactive Story Styling */
 body {
     font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(180deg, #081234);
+    background: linear-gradient(180deg, #363a55);
     min-height: 100vh;
     margin: 0 auto;
 }
@@ -26,12 +26,30 @@ body {
 }
   
 #main-title {
-    font-size: 3.8rem;
+    font-family: "Bookman Old Style", "Bookman", "Georgia", serif;
+    font-size: 7rem;
     font-weight: 700;
-    color: #ffffff;
-    letter-spacing: -1px;
-    text-shadow: 0 0 10px #e9da88b0;
-    text-transform: uppercase;
+    color: hsl(0, 63%, 92%);
+    letter-spacing: 1px;
+    display: inline;
+    text-transform: normal;
+    text-align: center;
+    -webkit-text-stroke: 3.5px #281b16;
+}
+
+#start-button {
+    background: #281b16;
+    width: 17.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: rgb(255, 230, 230);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 #story-container {
