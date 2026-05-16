@@ -3,8 +3,12 @@ const textContainer = document.getElementById("text-container");
 const decisionContainer = document.getElementById("decision-container");
 const buttonsAndInputs = document.getElementById("buttons-and-inputs");
 const timerContainer = document.getElementById("timer-container");
+const storyContainer = document.getElementById("story-container");
+const imageContainer = document.getElementById("image-container");
 const imageHolder = document.getElementById("story-image");
 const startButton = document.getElementById("start-button");
+const bottomRectangle = document.getElementById("bottomRectangle");
+const nameDiv = document.getElementById("name");
 
 // In dieser Variable wird der Timer gespeichert, damit wir ihn auch wieder löschen können, falls der Benutzer rechtzeitig eine Entscheidung trifft.
 let timerVariable;
@@ -32,7 +36,8 @@ const story = {
         "Du hast dich entschieden dem Mann weiter zufolgen. Er lauft gelassen, den gering belechteten Waldweg entlang, dabei wechselt er kein Wort mit dir."
       ],
       hasTimer: false,
-      image: "img/Gassi mit Hund.jpg",
+      image: "img/Bild.1.png",
+      name: ["Name"],
       next: [
         { key: "grosserTrakt", label: "Weiter" }
       ]
@@ -335,8 +340,10 @@ async function nextStory(key) {
     clearTimeout(timerVariable);
 
 
+
     // 1. Bild anzeigen
     if (node.image){
+        imageContainer.style.display = "block";
         imageHolder.style.opacity = 0;       
 
         // Animation um Bild einblenden zu lassen
@@ -345,6 +352,7 @@ async function nextStory(key) {
             imageHolder.style.opacity = 1; 
         }, 300); 
     } else {
+        imageContainer.style.display = "none";
         imageHolder.src = "";
     }
 
@@ -379,6 +387,62 @@ async function nextStory(key) {
 }
 
 
+async function startStory(key) {   
+  
+    // In der Variable "node" wird der aktuelle Story-Punkt gespeichert, damit wir einfacher darauf zugreifen können.
+    // Bsp: key = "bahnhof" -> node = story["bahnhof"] -> node.text, node.image, node.next, etc. werden vom Bahnhof geladen
+    const node = story["introduction"];
+    
+
+    if (node.image){
+        imageContainer.style.display = "block";
+        imageHolder.style.opacity = 0;       
+
+        // Animation um Bild einblenden zu lassen
+        setTimeout(() => {
+            imageHolder.src = node.image;             
+            imageHolder.style.opacity = 1; 
+        }, 300); 
+    } else {
+        imageContainer.style.display = "none";
+        imageHolder.src = "";
+    }
+
+
+    // 5. NAME??
+    if (node.name) {
+        nameDiv.textContent = node.name.join(" ");
+    }
+
+    // 2. Text schreiben
+    for (let textIdx in node.text) {
+        const text = node.text[textIdx];
+        if(useTypeWriterEffect){
+            await displayTextWithTypeWriter(text);
+        } else {
+            await displayTextNormally(text, textIdx == node.text.length-1);
+        }
+    }
+
+    // 3. Benutzereingabe?
+    if (node.input) {
+        showInput(node.input);
+
+        if(node.hasTimer){
+            displayTimer();
+        }
+    }
+
+    // 4. Normale Entscheidungen anzeigen
+    if (node.next) {
+        displayDecisionButtons(node.next);
+
+        if(node.hasTimer){
+            displayTimer();
+        }
+        
+    }
+}
 /**
  * Diese Funktion wird zum Start ausgeführt
  */
@@ -388,8 +452,14 @@ startButton.addEventListener("click", function(){
 
     // Der Inhalt mit dem Start Button soll verschwinden
     document.getElementById("start-button-holder").style.display = "none";
+    document.getElementById("main-title").style.display = "none";
+    document.getElementById("SchneckeTitelbild").style.display = "none";
+    document.getElementById("bottomRectangle").style.display = "none";
+
+    document.body.classList.toggle("black-bg");
 
     // Die Geschichte beginnt
-    nextStory("bintroduction");
-});
+    storyContainer.style.display = "flex";
+    startStory("introduction");
 
+  }); 

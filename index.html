@@ -13,7 +13,6 @@
     <link rel="icon" type="image/x-con" href="img/Browser-Tab.png">
   </head>
   <body>
-
     <!-- In dieser Überschrift (mit Behälter id="header") wird kein Inhalt durch JavaScript angepasst-->
     <div id="header" class="container">
       <h1 id="main-title">
@@ -22,32 +21,34 @@
         schnecke</h1>
     </div>
 
-    <!-- Dieser Behälter enthält alle Informationen zur Story und wird laufend angepasst. -->
-    <!-- Der Story-Container enthält einen "Spacer" und einen "Image-Container"-->
-
-        <!-- Der Start-Button, um die Geschichte zu starten -->
-
-        <!-- HTML "Behälter" für Buttons und die Timer-Bar -->
-        <!-- Die ID Attribute dieser Elemente sind wichtig, damit kann man sie später in JavaScript ansprechen-->
-        <div id="decision-container">
-          <div id="buttons-and-inputs"></div>
-          <div id="timer-container"></div>
-          <div id="start-button-holder">
-              <button id="start-button">Start</button>
-          </div>
-        </div>
-
+    <div id="start-container" class="container">
+      <div id="start-button-holder">
+        <button id="start-button">Start</button>
       </div>
+    </div>
 
-      <!-- Die Bilder die während des Spiels angezeigt werden -->
-      <!-- Das Startbild muss hier verändert werden -->
-      <div id="image-container">
+
+    <div id="story-wrapper">
+      <div id="image-container" style="display: none;">
         <img id="story-image" src="" alt="">
       </div>
 
+      <div id="story-container" class="container" style="display: none;">
+        <div id="text-container"></div>
+        <div id="decision-container">
+          <div id="buttons-and-inputs"></div>
+          <div id="timer-container"></div>
+        </div>
+        <div id="name"></div>
+      </div>
     </div>
 
-  <script src="script.js"></script> 
+    <script src="script.js"></script> 
+    
+    <img id="SchneckeTitelbild" src="img/Schnecke.Titelbild.svg" alt="">
+
+    <div id="bottomRectangle"></div>
 
   </body>
+
 </html>
