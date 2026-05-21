@@ -30,47 +30,61 @@ let textDelay = 500; // Hier kann die Verzögerung zwischen den Textabschnitten 
  *    input: { (optional, falls an diesem Story-Punkt eine Benutzereingabe benötigt wird) }
  */
 const story = {
-    introduction: {
-      id: "introduction",
+    Familienhaus: {
+      id: "Familienhaus",
       text: [
         "Du hast dich entschieden dem Mann weiter zufolgen. Er lauft gelassen, den gering belechteten Waldweg entlang, dabei wechselt er kein Wort mit dir."
       ],
       hasTimer: false,
       image: "img/Bild.1.png",
-      name: ["Name"],
+      name: ["Anna"],
       next: [
-        { key: "grosserTrakt", label: "Weiter" }
+        { key: "Berlin", label: "zu deinen Freunden" },
+        { key: "Jugendherberge", label: "zur Jugendherberge" }
       ]
     },
   
-    eingangKantiOlten: {
-      id: "eingangKantiOlten",
+    Berlin: {
+      id: "Berlin",
       text: [
         "Ist es heute an der Zeit eine Band zu gründen?",
         "Du bist dir nicht ganz sicher, und überlegst ob du erstmal in den grossen oder kleinen Trakt gehen sollst."
       ],
       hasTimer: true,
       image: "img/Gassi mit Hund.jpg",
+      name: ["Anna"],
       next: [
-        { key: "grosserTrakt", label: "In den grossen Trakt" },
-        { key: "kleinerTrakt", label: "In den kleinen Trakt" }
+        { key: "Zuhause", label: "Weiter" }
       ]
     },
-  
-    grosserTrakt: {
-      id: "grosserTrakt",
+
+   Jugendherberge: {
+      id: "Jugendherberge",
+      text: [
+        "Ist es heute an der Zeit eine Band zu gründen?",
+        "Du bist dir nicht ganz sicher, und überlegst ob du erstmal in den grossen oder kleinen Trakt gehen sollst."
+      ],
+      hasTimer: true,
+      image: "img/Gassi mit Hund.jpg",
+      name: ["Anna"],
+      next: [
+        { key: "Zuhause", label: "zu deinen Freunden" }
+      ]
+    },
+
+    Zuhause: {
+      id: "Zuhause",
       text: ["Unruhig läufst du hinter ihm her. Willst du ihn etwas versuchen zu fragen?"],
       image: "img/Gassi mit Hund.jpg",
       hasTimer: true,
+      name: ["Anna"],
       next: [
-        { key: "bandGruenden", label: "Mathelehrperson fragen" },
-        { key: "logarithmusGleichungen", label: "Logarithmus-Gleichungen lösen" },
-        { key: "brawlStarsSpielen", label: "Brawlstars spielen gehen" }
+        { key: "entscheidung_Joggen", label: "weiter" }
       ]
     },
   
-    kleinerTrakt: {
-      id: "kleinerTrakt",
+    entscheidung_Joggen: {
+      id: "entscheidung_Joggen",
       text: ["Der kleine Trakt ist dir allein schon wegen der Treppenanzahl sympathischer als der grosse Trakt.",
         "Wie haben eigentlich die Beatles ihre Band gegründet?",
         "Ist ja eigentlich egal, du könntest hier einfach mal herumfragen und deine Jazz-Band gründen.",
@@ -78,14 +92,15 @@ const story = {
       ],
       hasTimer: true,
       image: "img/kleinerTrakt.jpg",
+      name: ["Anna"],
       next: [
-        { key: "bandGruenden", label: "Geschichtslehrperson fragen" },
-        { key: "brawlStarsSpielen", label: "Herumfragen" }
+        { key: "Joggen", label: "trotzdem joggen gehen" },
+        { key: "nicht_Joggen", label: "nicht gehen" }
       ]
     },
 
-    bandGruenden: {
-      id: "bandGruenden",
+    Joggen: {
+      id: "Joggen",
       text: ["Yes! Die Lehrperson konnte dir gleich 3 weitere Schülerinnen und Schüler vermitteln, die ebenfalls eine Jazz-Band gründen wollen.",
         "Wie toll ist es jetzt, dass du Last Christmas endlich in einer Jazz Version spielen kannst?",
         "Ihr macht gleicht jeden Tag zur Probe ab und dürft sogar an der Weihnachtsfeier spielen!.",
@@ -94,12 +109,13 @@ const story = {
       hasTimer: false,
       image: "img/christmasBand.jpeg",
       next: [
-        { key: "schluss", label: "Spiel abschliessen" }
+        { key: "Blick_erhaschen", label: "Ich möchte es Wagen" },
+        { key: "Blick_nicht_erhaschen", label: "lieber nicht" }
       ]
     },
   
-    logarithmusGleichungen: {
-      id: "logarithmusGleichungen",
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
       text: ["Logarithmus-Gleichungen haben es in sich. Die Substitutions-Methode war dir nicht mehr vertraut, und kommt nächste Woche bei der Prüfung.",
         "Sehr gut, dass du dich entschieden hast, konzentriert mitzuarbeiten.",
         "Du entscheidest dich dafür, noch ein Jahr mit dem Projekt Jazz-Band zu warten."
@@ -107,12 +123,12 @@ const story = {
       hasTimer: false,
       image: "img/logarithmusGleichung.png",
       next: [
-        { key: "schluss", label: "Spiel abschliessen" }
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
       ]
     },
   
-    brawlStarsSpielen: {
-      id: "brawlStarsSpielen",
+    Blick_nicht_erhaschen: {
+      id: "Blick_nicht_erhaschen",
       text: ["Direkt als du andere Schülerinnen und Schüler fragen willst, ob sie eine Jazz-Band gründen wollen, wirst du abgelenkt.",
         "Zu einer Runde Brawl Stars kannst du kaum Nein sagen.",
         "Wie heisst nochmals die In-Game-Währung, mit der man neue Brawler freischalten kann?",
@@ -121,20 +137,10 @@ const story = {
       ],
       image: "img/brawlStars.jpg",
       hasTimer: true,
-
-      // Hier definieren wir die Benutzereingabe, die an diesem Story-Punkt benötigt wird.
-      // Der SuccessKey enthält der Identifier des Story-Objekts, welches als nächstes ausgeführt werden soll
-      // Der FailureKey enthält der Identifier des Story-Objekts, welches als nächstes ausgeführt werden soll, falls die Benutzereingabe falsch ist.
-      // Die answer ist die richtige Antwort, die mit der Benutzereingabe verglichen wird.
-      // Das Label ist der Text, der im Input-Feld als Platzhalter angezeigt wird.
-      input: {  
-        type: "text",
-        label: "Gib hier deine Antwort ein:",
-        answer: "Credits",
-        successKey: "bandGruenden",
-        failureKey: "brawlStarsVerlieren"
-      }
-    },
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+       ]
+      }, 
   
     brawlStarsVerlieren: {
       id: "brawlStarsVerlieren",
@@ -170,8 +176,34 @@ const story = {
       next: [
         { key: "introduction", label: "Spiel neu starten. :)" }
       ]
-    } 
-};
+    },
+    BLABLA: {
+      id: "BLABLA",
+      text: ["Direkt als du andere Schülerinnen und Schüler fragen willst, ob sie eine Jazz-Band gründen wollen, wirst du abgelenkt.",
+        "Zu einer Runde Brawl Stars kannst du kaum Nein sagen.",
+        "Wie heisst nochmals die In-Game-Währung, mit der man neue Brawler freischalten kann?",
+        "Deine Mitschülerinnen und Mitschüler warten auf deine Antwort:", 
+        "Wenn sie richtig ist, gehst du zur Lehrperson und fragst nach Tipps zur Gründung einer Jazz-Band.",
+      ],
+      image: "img/brawlStars.jpg",
+      hasTimer: true,
+
+      // Hier definieren wir die Benutzereingabe, die an diesem Story-Punkt benötigt wird.
+      // Der SuccessKey enthält der Identifier des Story-Objekts, welches als nächstes ausgeführt werden soll
+      // Der FailureKey enthält der Identifier des Story-Objekts, welches als nächstes ausgeführt werden soll, falls die Benutzereingabe falsch ist.
+      // Die answer ist die richtige Antwort, die mit der Benutzereingabe verglichen wird.
+      // Das Label ist der Text, der im Input-Feld als Platzhalter angezeigt wird.
+      input: {  
+        type: "text",
+        label: "Gib hier deine Antwort ein:",
+        answer: "Credits",
+        successKey: "bandGruenden",
+        failureKey: "brawlStarsVerlieren"
+      }
+    },
+}
+
+    
 
 /**
  * Diese Funktion zeigt den Text normal an, ohne Type-Writer Effekt.
@@ -391,7 +423,7 @@ async function startStory(key) {
   
     // In der Variable "node" wird der aktuelle Story-Punkt gespeichert, damit wir einfacher darauf zugreifen können.
     // Bsp: key = "bahnhof" -> node = story["bahnhof"] -> node.text, node.image, node.next, etc. werden vom Bahnhof geladen
-    const node = story["introduction"];
+    const node = story["Familienhaus"];
     
 
     if (node.image){
@@ -460,6 +492,6 @@ startButton.addEventListener("click", function(){
 
     // Die Geschichte beginnt
     storyContainer.style.display = "flex";
-    startStory("introduction");
+    startStory("Familienhaus");
 
   }); 
