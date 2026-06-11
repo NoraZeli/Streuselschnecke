@@ -32,50 +32,45 @@ let textDelay = 500; // Hier kann die Verzögerung zwischen den Textabschnitten 
 const story = {
     Familienhaus: {
       id: "Familienhaus",
-      text: [
-        "Ich habe es so satt und ich halte es einfach nicht mehr aus. Deshalb packe ich die wenigen Sachen, die ich besitze, in meinen Koffer. Ich greife schon nach der Türklinke, als ich spüre, wie sich eine Hand um mein Handgelenk schliesst.",
-        "Ein Schauer läuft mir über den Rücken, doch ich drehe mich um. Meine Schwester steht vor mir, ihre Augen sind ganz verquollen vom Weinen. Ich ahne, was sie sagen möchte: Ich solle sie nicht verlassen.", 
-        "Ohne dass sie etwas sagen kann, verlasse ich das Haus. Im Hintergrund ist die schreiende Stimme meiner Mutter immer noch zu hören.",
-        "Natürlich habe ich mir nicht überlegt, wo ich als Nächstes hingehen soll. Das kann man auch nicht von einer Dreizehnjährigen erwarten. ",
-        "Doch nun musste ich mich entscheiden, wie es weitergehen soll. ",
-        "Soll ich meine alte Freundin aus Berlin, mit der ich schon seit einer Weile keinen Kontakt hatte, anrufen und fragen, ob ich einige Nächte bei ihr übernachten könnte, bis ich selbst wieder auf den Beinen stehe? ",
-        "Oder lieber bei der nächstbesten Jugendherberge die Nächte verbringen."
+      text: ["Ich habe es so satt und ich halte es einfach nicht mehr aus. Deshalb packe ich die wenigen Sachen, die ich besitze, in meinen Koffer. Ich greife schon nach der Türklinke, als ich spüre, wie sich eine Hand um mein Handgelenk schliesst.",
       ],
       hasTimer: false,
-      image: "img/Bild.1.png",
+      image: "img/Bild1.png",
       name: ["Anna"],
       next: [
-        { key: "Berlin", label: "zu deinen Freunden" },
-        { key: "Jugendherberge", label: "zur Jugendherberge" }
+        { key: "Familienhaus_2", label: "weiter" },
       ]
     },
-  Familienhaus: {
-      id: "Familienhaus_",
-      text: [
-        "Ich habe es so satt und ich halte es einfach nicht mehr aus. Deshalb packe ich die wenigen Sachen, die ich besitze, in meinen Koffer. Ich greife schon nach der Türklinke, als ich spüre, wie sich eine Hand um mein Handgelenk schliesst.",
-        "Ein Schauer läuft mir über den Rücken, doch ich drehe mich um. Meine Schwester steht vor mir, ihre Augen sind ganz verquollen vom Weinen. Ich ahne, was sie sagen möchte: Ich solle sie nicht verlassen.", 
-        "Ohne dass sie etwas sagen kann, verlasse ich das Haus. Im Hintergrund ist die schreiende Stimme meiner Mutter immer noch zu hören.",
-        "Natürlich habe ich mir nicht überlegt, wo ich als Nächstes hingehen soll. Das kann man auch nicht von einer Dreizehnjährigen erwarten. ",
-        "Doch nun musste ich mich entscheiden, wie es weitergehen soll. ",
-        "Soll ich meine alte Freundin aus Berlin, mit der ich schon seit einer Weile keinen Kontakt hatte, anrufen und fragen, ob ich einige Nächte bei ihr übernachten könnte, bis ich selbst wieder auf den Beinen stehe? ",
-        "Oder lieber bei der nächstbesten Jugendherberge die Nächte verbringen."
+  Familienhaus_2: {
+      id: "Familienhaus_2",
+      text: ["Ein Schauer läuft mir über den Rücken, doch ich drehe mich um. Meine Schwester steht vor mir, ihre Augen sind ganz verquollen vom Weinen. Ich ahne, was sie sagen möchte: Ich solle sie nicht verlassen.", 
+          "Ohne dass sie etwas sagen kann, verlasse ich das Haus. Im Hintergrund ist die schreiende Stimme meiner Mutter immer noch zu hören.",
+          "Natürlich habe ich mir nicht überlegt, wo ich als Nächstes hingehen soll. Das kann man auch nicht von einer Dreizehnjährigen erwarten. ",
+          "Doch nun musste ich mich entscheiden, wie es weitergehen soll. ",
+          "Soll ich meine alte Freundin aus Berlin, mit der ich schon seit einer Weile keinen Kontakt hatte, anrufen und fragen, ob ich einige Nächte bei ihr übernachten könnte, bis ich selbst wieder auf den Beinen stehe? ",
+          "Oder lieber bei der nächstbesten Jugendherberge die Nächte verbringen."
       ],
       hasTimer: false,
-      image: "img/Bild.1.png",
+      image: "img/Bild1.png",
       name: ["Anna"],
       next: [
-        { key: "Berlin", label: "zu deinen Freunden" },
+        { key: "Berlin", label: "zu deiner Freundin" },
         { key: "Jugendherberge", label: "zur Jugendherberge" }
       ]
     },
 
     Berlin: {
       id: "Berlin",
-      text: [
-        
+      text: ["Ich erreiche meine Freundin, welche drei Jahre älter als ich ist und vor einer Weile eine WG mit zwei anderen Mädchen gegründet hat, telefonisch.",
+          "Sie sagt mir, sie freue sich, dass ich mich endlich mal gemeldet habe, und ich könne natürlich einige Nächte bei ihr verbringen.",
+          "Die Google-Maps-Karte weist mich darauf hin, dass sich der Zielort 500 m vor mir befindet, deshalb stecke ich mein Handy weg und richte den Blick geradeaus. In der Ferne sehe ich eine Gestalt vor der Eingangstür des Wohnungskomplexes stehen. Als ich näherkomme, erkenne ich meine Freundin, die sich aber äußerlich sehr verändert hat, seit ich sie vor 5 Jahren zuletzt gesehen habe.",
+          "Sie wirkt glücklich, mich zu sehen und begrüßt mich mit einer Umarmung.",
+          "Als wir oben vor der Tür ankommen, höre ich Musik durch die Tür hindurch. Sobald sie die Klinke herunterdrückt, werde ich mit einer Wolke von Gras begrüßt. Ihre zwei weiteren Freundinnen sitzen im Wohnzimmer und rauchen.",
+          "Sie entschuldigt sich dafür und fragt, ob es mir etwas ausmacht, wenn sie sich zu den anderen gesellt.",
+          "Ich schüttle den Kopf."
       ],
     
-      hasTimer: true,
+      hasTimer: false,
       image: "img/Gassi mit Hund.jpg",
       name: ["Anna"],
       next: [
@@ -85,35 +80,37 @@ const story = {
 
    Jugendherberge: {
       id: "Jugendherberge",
-      text: [
-        "Ist es heute an der Zeit eine Band zu gründen?",
-        "Du bist dir nicht ganz sicher, und überlegst ob du erstmal in den grossen oder kleinen Trakt gehen sollst."
+      text: ["Die naheliegendste Herberge ist zehn Minuten von mir entfernt, sie hat nicht die besten Google-Rezensionen, doch sie liegt besser in meinem Budget.",
+            "Nachdem ich mir ein Zimmer mit vier anderen Leuten ergattert habe, verbringe ich die meiste Zeit faulend auf meinem Bett und lasse den letzten Abend zu Hause Revue passieren. Wie meine Schwester mir flehend in die Augen sah. Wie ich sie einfach zurückliess, ohne die Folgen meiner Tat zu realisieren. Das Geld, welches schon zu Beginn wenig war, ging mir allmählich aus und ich war gezwungen, meine Freundin aus Berlin zu kontaktieren."
       ],
-      hasTimer: true,
+      hasTimer: false,
       image: "img/Gassi mit Hund.jpg",
       name: ["Anna"],
       next: [
-        { key: "Zuhause", label: "zu deinen Freunden" }
+        { key: "Berlin", label: "zu deiner Freundin" }
       ]
     },
 
     Zuhause: {
       id: "Zuhause",
-      text: ["Unruhig läufst du hinter ihm her. Willst du ihn etwas versuchen zu fragen?"],
+      text: ["Es sind elf Monate vergangen, seit meiner Ankunft, und die Verhältnisse zwischen mir und den zwei weiteren Mädchen der WG haben sich nicht gebessert, aber um ehrlich zu sein, hatte ich auch selbst nicht das Interesse, etwas daran zu ändern, und auch nicht die Zeit.",
+            "Denn mein Leben besteht aus Schule und Arbeit. Für Freizeit habe ich wenig Platz in meinem Alltag und wenn ich Zeit habe, gehe ich gerne joggen, es hilft mir, über Dinge nachzudenken und Dampf abzulassen.",
+            "Meine Freundin von früher ist wie immer sehr freundlich, doch viel unternehmen wir nicht miteinander. Solange ich die WG-Gebühren zahle, ist alles in bester Ordnung.",
+       
+      ],
       image: "img/Gassi mit Hund.jpg",
       hasTimer: true,
       name: ["Anna"],
       next: [
-        { key: "entscheidung_Joggen", label: "weiter" }
+        { key: "entscheidung_Joggen", label: "Weiter" }
       ]
     },
   
     entscheidung_Joggen: {
       id: "entscheidung_Joggen",
-      text: ["Der kleine Trakt ist dir allein schon wegen der Treppenanzahl sympathischer als der grosse Trakt.",
-        "Wie haben eigentlich die Beatles ihre Band gegründet?",
-        "Ist ja eigentlich egal, du könntest hier einfach mal herumfragen und deine Jazz-Band gründen.",
-        "Oder willst du alternativ deine Geschichtslehrerin fragen, ob sie jemanden kennt?"
+      text: ["Wie jeden Freitag gehe ich im Viertel joggen, meist gehe ich vor der Abenddämmerung, weil ich sonst mit der Schule und dem Geldverdienen beschäftigt bin, und hoffe darauf, dass ich heimkomme, bevor es dunkel wird. Doch diesen Abend habe ich ein ungutes Gefühl.",
+            "Das Joggen tut mir gut und lässt mir Zeit zum Nachdenken. Soll ich deshalb trotzdem mich auf den Weg nach draußen machen?",
+    
       ],
       hasTimer: true,
       image: "img/kleinerTrakt.jpg",
@@ -126,13 +123,15 @@ const story = {
 
     Joggen: {
       id: "Joggen",
-      text: ["Yes! Die Lehrperson konnte dir gleich 3 weitere Schülerinnen und Schüler vermitteln, die ebenfalls eine Jazz-Band gründen wollen.",
-        "Wie toll ist es jetzt, dass du Last Christmas endlich in einer Jazz Version spielen kannst?",
-        "Ihr macht gleicht jeden Tag zur Probe ab und dürft sogar an der Weihnachtsfeier spielen!.",
-        "Frohe Weihnachten und viel Spass mit deiner neuen Jazz-Band!"
+      text: ["Ich bin jetzt schon etwas weiter vom Apartmentkomplex entfernt, als ich hinter mir entfernte Schritte wahrnehme. Die Dämmerung ist schneller eingetroffen, als ich vermutet habe. Um ehrlich zu sein, bin ich zu spät losgegangen, denn ich habe mich gescheut, rauszugehen.",
+            "Die verbleibende Sonne hat das Viertel mit einem goldenen Licht übersät. Bald würden nur die Straßenlaternen die Straße beleuchten.",
+            "Die Schritte hinter mir geben nicht nach und bleiben beständig entfernt.",
+            "Soll ich einen Blick über meine Schulter erhaschen?"
+
       ],
       hasTimer: false,
       image: "img/christmasBand.jpeg",
+      name: ["Anna"],
       next: [
         { key: "Blick_erhaschen", label: "Ich möchte es Wagen" },
         { key: "Blick_nicht_erhaschen", label: "lieber nicht" }
@@ -141,12 +140,11 @@ const story = {
   
     Blick_erhaschen: {
       id: "Blick_erhaschen",
-      text: ["Logarithmus-Gleichungen haben es in sich. Die Substitutions-Methode war dir nicht mehr vertraut, und kommt nächste Woche bei der Prüfung.",
-        "Sehr gut, dass du dich entschieden hast, konzentriert mitzuarbeiten.",
-        "Du entscheidest dich dafür, noch ein Jahr mit dem Projekt Jazz-Band zu warten."
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
       ],
       hasTimer: false,
       image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
       next: [
         { key: "Standort_teilen", label: "Freunden Standort teilen" }
       ]
@@ -154,52 +152,245 @@ const story = {
   
     Blick_nicht_erhaschen: {
       id: "Blick_nicht_erhaschen",
-      text: ["Direkt als du andere Schülerinnen und Schüler fragen willst, ob sie eine Jazz-Band gründen wollen, wirst du abgelenkt.",
-        "Zu einer Runde Brawl Stars kannst du kaum Nein sagen.",
-        "Wie heisst nochmals die In-Game-Währung, mit der man neue Brawler freischalten kann?",
-        "Deine Mitschülerinnen und Mitschüler warten auf deine Antwort:", 
-        "Wenn sie richtig ist, gehst du zur Lehrperson und fragst nach Tipps zur Gründung einer Jazz-Band.",
+      text: ["Ich entscheide mich, nicht über die Schulter zu schauen. Solange ich die Person hinter mir nicht sehe, ist sie auch nicht wirklich dort.",
+              "Obwohl ich versuche, ein optimistisches Mindset beizubehalten, kann ich die Schritte hinter mir nicht ausblenden, und mit der Zeit beunruhigen sie mich sehr. Ich versuche, meine Atmung wieder in den Griff zu kriegen, sonst werde ich ein Stechen in meiner Seite verspüren und dem Verfolger ausgeliefert sein."
+
       ],
       image: "img/brawlStars.jpg",
+      name: ["Anna"],
       hasTimer: true,
       next: [
         { key: "Standort_teilen", label: "Freunden Standort teilen" }
        ]
       }, 
   
-    brawlStarsVerlieren: {
-      id: "brawlStarsVerlieren",
-      text: ["Oh nein! Du hast die Runde verloren, weil du die In-Game-Währung nicht kanntest.",
-        "Vielleicht hättest du doch lieber nach einer Jazz-Band fragen sollen.",
-        "Naja, nächstes Jahr versuchst du es wieder."
+    Standort_teilen: {
+      id: "Standort_teilen",
+      text: ["Ich versuche, mein Tempo zu halten, weder zu schnell noch zu langsam zu werden. Das Sicherste, das ich für den Moment tun kann, ist, meinen Standort an meine Freundin zu senden. Ich versende die Nachricht, und in der rechten Ecke ist nur ein Häkchen abgebildet. Als ich von meinem Handy aufschaue, sehe ich, dass sich vier Meter vor mir eine Kreuzung erstreckt.",
+            "In welche Richtung soll ich gehen?"
       ],
+      image: "img/brawlStars.jpg",
+      name: ["Anna"],
       hasTimer: false,
       next: [
-        { key: "schluss", label: "Spiel abschliessen" }
+        { key: "Rechts_abbiegen", label: "rechts" }
       ]
     },
 
-    schluss: {
-      id: "schluss",
+    Rechts_abbiegen: {
+      id: "Rechts_abbiegen",
       text: ["Vielen Dank fürs Spielen! Ich hoffe, dir hat die Geschichte gefallen.",
         "Frohe Weihnachten und bis zum nächsten Mal!"
       ],
       image: "img/weihnachtsbaumBild.jpg",
       hasTimer: false,
+      name: ["Anna"],
       next: [
-        { key: "introduction", label: "Spiel neu starten. :)" }
+        { key: "Umdrehen", label: "ja" },
+        { key: "Nicht_Umdrehen", label: "nein" }
+      ]
+    },
+    
+    Nicht_Umdrehen: {
+      id: "Nicht_Umdrehen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
+      ]
+    },
+    
+    Blick_erhaschen: {
+      id: "Blick_erhaschen",
+      text: ["Als ich mich umdrehe, sehe ich eine Gestalt mehrere Meter hinter mir, ruckartig drehe ich den Kopf wieder zurück, damit ich mich nicht auffällig verhalte. Der Körperbau der Gestalt wirkt männlich und er wirkt ziemlich groß. Falls er näherkäme, weiß ich nicht, ob ich es mit ihm aufnehmen könnte."
+      ],
+      hasTimer: false,
+      image: "img/logarithmusGleichung.png",
+      name: ["Anna"],
+      next: [
+        { key: "Standort_teilen", label: "Freunden Standort teilen" }
       ]
     },
 
     verloren: {
       id: "verloren",
-      text: ["Leider hast du das Spiel nicht zur richtigen Zeitpunkt weitergespielt.",
-        "Frohe Weihnachten trotzdem. Viel Glück beim nächstem Mal!"
+      text: ["Weil ich mit den Gedanken irgendwo anders bin, stolppere ich. Ich spüre wie die Perosn näher kommt, doch anstatt mich zu greifen, berührt er mich an der Schulter. Sofort springe ich auf und renne weg."
       ],
       image: "img/weihnachtsbaumBild.jpg",
       hasTimer: false,
       next: [
-        { key: "introduction", label: "Spiel neu starten. :)" }
+        { key: "In_der_Wohnung(F)", label: "Direkt nach Hause" }
       ]
     },
     BLABLA: {
