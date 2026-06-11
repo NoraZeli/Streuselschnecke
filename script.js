@@ -33,7 +33,13 @@ const story = {
     Familienhaus: {
       id: "Familienhaus",
       text: [
-        "Du hast dich entschieden dem Mann weiter zufolgen. Er lauft gelassen, den gering belechteten Waldweg entlang, dabei wechselt er kein Wort mit dir."
+        "Ich habe es so satt und ich halte es einfach nicht mehr aus. Deshalb packe ich die wenigen Sachen, die ich besitze, in meinen Koffer. Ich greife schon nach der Türklinke, als ich spüre, wie sich eine Hand um mein Handgelenk schliesst.",
+        "Ein Schauer läuft mir über den Rücken, doch ich drehe mich um. Meine Schwester steht vor mir, ihre Augen sind ganz verquollen vom Weinen. Ich ahne, was sie sagen möchte: Ich solle sie nicht verlassen.", 
+        "Ohne dass sie etwas sagen kann, verlasse ich das Haus. Im Hintergrund ist die schreiende Stimme meiner Mutter immer noch zu hören.",
+        "Natürlich habe ich mir nicht überlegt, wo ich als Nächstes hingehen soll. Das kann man auch nicht von einer Dreizehnjährigen erwarten. ",
+        "Doch nun musste ich mich entscheiden, wie es weitergehen soll. ",
+        "Soll ich meine alte Freundin aus Berlin, mit der ich schon seit einer Weile keinen Kontakt hatte, anrufen und fragen, ob ich einige Nächte bei ihr übernachten könnte, bis ich selbst wieder auf den Beinen stehe? ",
+        "Oder lieber bei der nächstbesten Jugendherberge die Nächte verbringen."
       ],
       hasTimer: false,
       image: "img/Bild.1.png",
@@ -43,13 +49,32 @@ const story = {
         { key: "Jugendherberge", label: "zur Jugendherberge" }
       ]
     },
-  
+  Familienhaus: {
+      id: "Familienhaus_",
+      text: [
+        "Ich habe es so satt und ich halte es einfach nicht mehr aus. Deshalb packe ich die wenigen Sachen, die ich besitze, in meinen Koffer. Ich greife schon nach der Türklinke, als ich spüre, wie sich eine Hand um mein Handgelenk schliesst.",
+        "Ein Schauer läuft mir über den Rücken, doch ich drehe mich um. Meine Schwester steht vor mir, ihre Augen sind ganz verquollen vom Weinen. Ich ahne, was sie sagen möchte: Ich solle sie nicht verlassen.", 
+        "Ohne dass sie etwas sagen kann, verlasse ich das Haus. Im Hintergrund ist die schreiende Stimme meiner Mutter immer noch zu hören.",
+        "Natürlich habe ich mir nicht überlegt, wo ich als Nächstes hingehen soll. Das kann man auch nicht von einer Dreizehnjährigen erwarten. ",
+        "Doch nun musste ich mich entscheiden, wie es weitergehen soll. ",
+        "Soll ich meine alte Freundin aus Berlin, mit der ich schon seit einer Weile keinen Kontakt hatte, anrufen und fragen, ob ich einige Nächte bei ihr übernachten könnte, bis ich selbst wieder auf den Beinen stehe? ",
+        "Oder lieber bei der nächstbesten Jugendherberge die Nächte verbringen."
+      ],
+      hasTimer: false,
+      image: "img/Bild.1.png",
+      name: ["Anna"],
+      next: [
+        { key: "Berlin", label: "zu deinen Freunden" },
+        { key: "Jugendherberge", label: "zur Jugendherberge" }
+      ]
+    },
+
     Berlin: {
       id: "Berlin",
       text: [
-        "Ist es heute an der Zeit eine Band zu gründen?",
-        "Du bist dir nicht ganz sicher, und überlegst ob du erstmal in den grossen oder kleinen Trakt gehen sollst."
+        
       ],
+    
       hasTimer: true,
       image: "img/Gassi mit Hund.jpg",
       name: ["Anna"],
