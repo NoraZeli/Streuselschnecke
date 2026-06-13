@@ -485,7 +485,7 @@ const story = {
       id: "Direkt_nach_Hause_2",
       text: ["Spaß beiseite, über so etwas sollte ich keine Witze machen, und ich weiß auch nicht so recht, ob ich den Mädchen in der WG etwas davon erzählen soll, aber ich möchte sie auch nicht beunruhigen, und sie sind sowieso nicht sehr begeistert von mir, das würde die Situation nur noch verschlimmern."
       ],
-      image: "img/Bild14.png",
+      image: "img/Bild14.jpg",
       hasTimer: false,
       name: ["Anna"],
       next: [
@@ -776,6 +776,11 @@ async function nextStory(key) {
         imageHolder.src = "";
     }
 
+    // 5. NAME??
+    if (node.name) {
+        nameDiv.textContent = node.name.join(" ");
+    }
+    
     // 2. Text schreiben
     for (let textIdx in node.text) {
         const text = node.text[textIdx];

@@ -81,13 +81,14 @@ body.black-bg {
     background: #161924;
     border-radius: 10px;
     backdrop-filter: blur(4px);
-    margin-top: 500px;
+    margin-bottom: 50px;
+    margin-top: 300px;
     max-width: 800px;
     padding: 20px;
     color:#E7DBD9;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1rem;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 #start-container {
@@ -120,24 +121,25 @@ body.black-bg {
 
 #image-container {
     position:absolute;
-    inset: 0;
     z-index: 0;
     overflow: hidden;
-    align-self: flex-end;
     text-align: center;
-    margin-top: -500px;
-    margin-bottom: 100px;
-    justify-self: center;
-    max-width: 1000%;
+    width: 100%;
+    inset: 0;
+    align-self: flex-end;
+    margin-top: -550px;
 }
 
 #image-container img {
-    width: 100%;
-    margin: 0;
+    width:auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
     padding: 0;
     transition: opacity 300ms ease-in-out;
     opacity: 1;
     object-fit: cover;
+    min-height: 400px;
+    max-height: 700px;
 }
 
 
