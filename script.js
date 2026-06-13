@@ -682,19 +682,308 @@ const story = {
         { key: "Mann_kommt", label: "Weiter" }
       ]
     },
+
     Mann_kommt:{
       id: "Mann_kommt",
-      text: [""
+      text: ["Anna hat sich so lange im Zimmer verkrochen, dass sogar Kim und Hannah von ihren Grasbesorgungen zurückgekommen sind. Die beiden gesellen sich zu mir auf die Couch, doch ich muss langsam das Abendessen für uns vier vorbereiten und begebe mich in die Küchennische."
       ],
-      image: "img/Bild15.6.png",
+      image: "img/Bild15.7.png",
       hasTimer: false,
       name: ["Freundin"],
       next: [
-        { key: "", label: "Weiter" }
+        { key: "Mann_kommt_2", label: "Weiter" }
+     ]
+    },
+    Mann_kommt_2:{
+      id: "Mann_kommt_2",
+      text: ["Als ich gerade den Kühlschrank öffne, klingelt es an der Tür. Ich sehe zu Kim und Hannah rüber, die genauso verwirrt sind wie ich, denn wir haben niemanden heute Abend erwartet."
+      ],
+      image: "img/Bild15.8.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Mann_kommt_3", label: "Weiter" }
+     ]
+    },
+    Mann_kommt_3:{
+      id: "Mann_kommt_3",
+      text: ["Bis mir der Anruf von Anna in den Sinn kommt, und sogleich kommt auch schon Anna, geschminkt und aufgebrezelt, aus ihrem Versteck heraus.",
+            "Man kann ihr anmerken, dass sie aus irgendeinem Grund nervös ist, denn sie kaut auf ihrer Unterlippe und spielt mit dem Ärmel ihres Oberteils."
+      ],
+      image: "img/Bild15.9.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Mann_kommt_4", label: "Weiter" }
+     ]
+    },
+    Mann_kommt_4:{
+      id: "Mann_kommt_4",
+      text: ["Sie öffnet die Tür, und ein schüchterner, zurückhaltender Mann mit Jeans und T-Shirt steht ihr gegenüber. Wie ich von der Küche aus sehen kann, spielt sich ein Lächeln um seine Lippen, als er etwas sagt und hinter sich deutet. Anna nickt und folgt ihm nach draußen.",
+            "Ich hätte nie gedacht, dass Anna auf ältere Männer steht, aber es gibt für alles ein erstes Mal, und wir haben außerdem nie über Jungs geredet oder sonst viel über irgendetwas anderes."
+      ],
+      image: "img/Bild19.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Auto", label: "Weiter" }
      ]
     },
 
+    Auto:{
+      id: "Auto",
+      text: ["Beim Anruf hatte er mir seinen Namen genannt und gestanden, dass er derjenige gewesen war, der mich vor ein paar Tagen verfolgt hatte. Daraufhin hatte er mich gefragt, ob er mich kennenlernen dürfe. Ich hatte zwar schon viel über solche Treffen gehört und mir oft vorgestellt, wie so etwas wäre."
+      ],
+      image: "img/Bild20.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Auto_2", label: "Weiter" }
+     ]
+    },
+    Auto_2:{
+      id: "Auto_2",
+      text: ["Ich weiß immer noch nicht, was ich von dieser Situation halten soll, und es schwirren sehr viele Fragen in meinem Kopf herum.",
+            "Soll ich ihn fragen, wie er meine Nummer ausfindig machen konnte?"
+      ],
+      image: "img/Bild20.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Auto_ja", label: "Ja" },
+        { key: "Auto_nein", label: "Nein" }
+     ]
+    },
+    Auto_ja:{
+      id: "Auto_ja",
+      text: ["Als ich die Frage stelle, wird er zögerlich, und nach einer Weile antwortet er: „Ich habe Isabel danach gefragt.“",
+            "Sobald er ihren Namen gesagt hat, kehrt die Stille im Auto zurück."
+      ],
+      image: "img/Bild21.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "nächsterTag", label: "Nächster Tag" }
+     ]
+    },
+    Auto_nein:{
+      id: "Auto_nein",
+      text: ["Ich entscheide mich, die Frage nicht zu stellen, da ich schon eine Vermutung habe, was seine Antwort darauf sein wird.",
+            "Die restliche Autofahrt bleibt still, da keiner von uns etwas sagt."
+      ],
+      image: "img/Bild20.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "nächsterTag", label: "Nächster Tag" }
+     ]
+    },
 
+    nächsterTag:{
+      id: "nächsterTag",
+      text: ["An dem darauffolgenden Tag der Verabredung entscheide ich mich, meine Schwester mal wieder anzurufen, um mich zu vergewissern, dass es ihr gut geht.",
+            "Ich wähle ihre Nummer, und mein Handy kann nicht einmal einige piepende Töne von sich geben, als ich ihre Stimme aus dem Lautsprecher wahrnehme."
+      ],
+      image: "img/Bild22.0.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "nächsterTag_2", label: "Weiter" }
+     ]
+    },
+    nächsterTag_2:{
+      id: "nächsterTag_2",
+      text: ["Sie fragt, wie es mir gehe und was ich in der letzten Zeit getrieben habe.",
+            "Soll ich die Verabredung ihr gegenüber erwähnen?"
+      ],
+      image: "img/Bild22.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "nächsterTag_ja", label: "Ja" },
+        { key: "nächsterTag_nein", label: "Nein" }
+     ]
+    },
+    nächsterTag_ja:{
+      id: "nächsterTag_ja",
+      text: ["Ich sage: „Ich bin gestern mit einem Mann ausgegangen.“",
+            "Daraufhin antwortet sie: „Uh… mit einem Mann?“"
+      ],
+      image: "img/Bild22.3.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "nächsterTag_ja2", label: "Weiter"}
+     ]
+    },
+    nächsterTag_ja2:{
+      id: "nächsterTag_ja2",
+      text: ["„Ja, ein Mann… er hatte mich zum Café Richter mitgenommen, danach waren wir im Kino, es war ein Film von Rohmer. Zum Schluss nahm er mich ins Restaurant und stellte mich seinen Freunden vor“, erwidere ich.",
+            "„Er stellte dich schon seinen Freunden vor, beim ersten Date?“, schreit sie, ohne jegliches Mitleid mit meinem Trommelfell zu haben."
+      ],
+      image: "img/Bild22.3.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "nächsterTag_ja3", label: "Weiter"}
+     ]
+    },
+    nächsterTag_ja3:{
+      id: "nächsterTag_ja3",
+      text: ["„Mhm…“",
+            "Einige andere Dinge, die ich während der Verabredung erfahren habe, möchte ich zurzeit für mich behalten und sie damit nicht noch mehr belasten."
+      ],
+      image: "img/Bild23.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "nächsterTag_3", label: "Weiter"}
+     ]
+    },
+
+    nächsterTag_nein:{
+      id: "nächsterTag_nein",
+      text: ["Ich fühle mich sehr schuldig, dass ich ihr diese Information vorenthalte, denn ich verheimliche ihr ungern Dinge.",
+            "Trotzdem antworte ich lediglich mit: „nichts Besonderes“."
+      ],
+      image: "img/Bild23.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "nächsterTag_3", label: "Weiter"}
+     ]
+    },
+    nächsterTag_3:{
+      id: "nächsterTag_3",
+      text: ["Ich frage sie, wie es ihr momentan geht, und daraufhin antwortet sie: „Es geht mir gut.“",
+            "Soll ich sie noch etwas anderes fragen?"
+      ],
+      image: "img/Bild24.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "situation_fragen", label: "Ist die Situation zuhause besser geworden?"},
+        { key: "ImmerNochDa_fragen", label: "Ist er immer noch da?"}
+     ]
+    },
+    situation_fragen:{
+      id: "situation_fragen",
+      text: ["Eine lange Funkstille ist eingetreten, nachdem ich sie das gefragt habe. Ich weiß, dass ich eine wunde Stelle bei ihr getroffen habe, denn ich hätte genau gleich wie sie mit Schweigen geantwortet.",
+        "Doch dann antwortet sie trotzdem: „Ja, es hat sich um einiges gebessert, denn Mama trinkt jetzt etwas weniger, seitdem du gegangen bist. Im Übrigen vermissen wir dich alle sehr.“"
+      ],
+      image: "img/Bild24.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "situation_fragen2", label: "Weiter"}
+     ]
+    },
+    situation_fragen2:{
+      id: "situation_fragen2",
+      text: ["Jaaa, klar vermissen mich alle, der Mann von Mama macht sicher Freudentänze, seitdem ich weg bin, denn jetzt kann er tun und lassen, was er will mit meiner Schwester, ohne dass ich ihm die Stirn biete."
+      ],
+      image: "img/Bild24.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "situationS", label: "Weiter"}
+     ]
+    },
+    situationS:{
+      id: "situationS",
+      text: ["Wenn ich ehrlich bin, hat sich nichts verbessert, und Mama vermisst Anna gar nicht mal, oder sie lässt es sich nicht anmerken. Über unseren Stiefvater muss ich gar nicht reden, denn dem geht’s blendend, seitdem Anna nicht mehr hier ist. Seit sie weg ist, gibt es niemanden mehr, der ihm die Stirn bietet. Ich selbst kann dafür keinen Mut aufbringen. Denn Mama schläft meistens nach der Arbeit aufgrund all des Biers und jeglicher anderen Spirituosen, die sie in sich hineinkippt, ein."
+      ],
+      image: "img/Bild25.png",
+      hasTimer: false,
+      name: ["Schwester"],
+      next: [
+        { key: "situationS2", label: "Weiter"}
+     ]
+    },
+    situationS2:{
+      id: "situationS2",
+      text: ["Manchmal genügte auch ein umgekipptes Glas oder ein falsch gedeckter Tisch, damit die Stimmung unseres Stiefvaters kippte.",
+        "Ohne Anna war es zuhause einfach nicht dasselbe, aber ich bin froh, dass wenigstens sie entkommen konnte."
+      ],
+      image: "img/Bild25.png",
+      hasTimer: false,
+      name: ["Schwester"],
+      next: [
+        { key: "situationS3", label: "Weiter"}
+     ]
+    },
+    situationS3:{
+      id: "situationS3",
+      text: ["„Ich schwöre dir, ich werde genügend Geld auftreiben, sodass ich dich von ihnen befreien kann. Du musst nur noch etwas aushalten“, sagte Anna mit bebender Stimme.",
+        "Aus diesem Grund wollte ich ihr nicht die Wahrheit über die Lage zuhause preisgeben, denn ich kenne sie gut und weiß, dass es sie auffressen würde und sie sich nur selbst die Schuld an allem geben würde."
+      ],
+      image: "img/Bild25.png",
+      hasTimer: false,
+      name: ["Schwester"],
+      next: [
+        { key: "unterhalten", label: "Weiter"}
+     ]
+    },
+
+    ImmerNochDa_fragen:{
+      id: "ImmerNochDa_fragen",
+      text: ["Nachdem ich die Frage an meine Schwester gestellt habe, kommt eine Weile lang keine Antwort, und ich habe schon befürchtet, dass sie aufgelegt hat, als aus dem Hörer ein knappes „Ja“ zu hören ist.",
+        "Ich wollte sie nicht zu mehr drängen und finde, ich habe auch nicht das Recht dazu, denn ich lebe schon seit einem Jahr nicht mehr unter dem Einfluss der beiden."
+      ],
+      image: "img/Bild24.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "ImmerNochDa_S", label: "Weiter"}
+     ]
+    },
+    ImmerNochDa_S:{
+      id: "ImmerNochDa_S",
+      text: ["Klar gefällt es mir nicht, meine Schwester anzulügen, doch ich möchte nicht, dass sie sich die Schuld für Dinge gibt, für die eigentlich unsere Mutter verantwortlich ist.",
+        "Deshalb antworte ich nur mit einem knappen „Ja“, obwohl sich zu Hause überhaupt nichts verändert hat. "
+      ],
+      image: "img/Bild24.png",
+      hasTimer: false,
+      name: ["Schwester"],
+      next: [
+        { key: "ImmerNochDa_S2", label: "Weiter"}
+     ]
+    },
+    ImmerNochDa_S2:{
+      id: "ImmerNochDa_S2",
+      text: ["Unser Stiefvater ist noch immer da, und Mama wird sich wohl auch nicht so schnell von ihm trennen. Er bringt zusätzliches Geld ins Haus und hält uns finanziell über Wasser. Dadurch bleibt ihr sogar noch etwas mehr von ihrem Lohn übrig, das sie für Bier und andere Spirituosen ausgeben kann."
+      ],
+      image: "img/Bild25.png",
+      hasTimer: false,
+      name: ["Schwester"],
+      next: [
+        { key: "ImmerNochDa_S3", label: "Weiter"}
+     ]
+    },
+    ImmerNochDa_S3:{
+      id: "ImmerNochDa_S3",
+      text: ["Mama will bis heute nicht einsehen, dass sie Mitschuld daran trägt, dass Anna gegangen ist. Sie hat nichts an ihrem Leben geändert, damit ich nicht irgendwann denselben Entschluss fasse.",
+        "Und er ist kein Stück besser. Früher ließ er seinen Frust an Anna aus, heute trifft es meistens mich."
+      ],
+      image: "img/Bild25.png",
+      hasTimer: false,
+      name: ["Schwester"],
+      next: [
+        { key: "unterhalten", label: "Weiter"}
+     ]
+    },
+
+    unterhalten:{
+      id: "unterhalten",
+      text: ["Nach unserem holprigen Start und dem langen Schweigen, weil wir beide in Gedanken versunken sind, wechseln wir langsam das Thema und unterhalten uns eine Weile. Wir verabreden uns für nächste Woche, denn in naher Zukunft werden wir uns wieder daran gewöhnen müssen, zusammenzuleben."
+      ],
+      image: "img/Bild25.1.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "EtwasZsmUnternehmen", label: "Etwas zusammen unternehmen"}
+     ]
+    },
 
 
 
