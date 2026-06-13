@@ -152,8 +152,7 @@ const story = {
 
    Jugendherberge: {
       id: "Jugendherberge",
-      text: ["Die naheliegendste Herberge ist zehn Minuten von mir entfernt, sie hat nicht die besten Google-Rezensionen, doch sie liegt besser in meinem Budget.",
-            "Nachdem ich mir ein Zimmer mit vier anderen Leuten ergattert habe, verbringe ich die meiste Zeit faulend auf meinem Bett und lasse den letzten Abend zu Hause Revue passieren. Wie meine Schwester mir flehend in die Augen sah. Wie ich sie einfach zurückliess, ohne die Folgen meiner Tat zu realisieren. Das Geld, welches schon zu Beginn wenig war, ging mir allmählich aus und ich war gezwungen, meine Freundin aus Berlin zu kontaktieren."
+      text: ["Die naheliegendste Herberge ist zehn Minuten von mir entfernt, sie hat nicht die besten Google-Rezensionen, doch sie liegt besser in meinem Budget."
       ],
       hasTimer: false,
       image: "img/Bild2.0.png",
@@ -224,7 +223,7 @@ const story = {
       text: ["Wie jeden Freitag gehe ich im Viertel joggen, meist gehe ich vor der Abenddämmerung, weil ich sonst mit der Schule und dem Geldverdienen beschäftigt bin, und hoffe darauf, dass ich heimkomme, bevor es dunkel wird. Doch diesen Abend habe ich ein ungutes Gefühl.",
             "Das Joggen tut mir gut und lässt mir Zeit zum Nachdenken. Soll ich deshalb trotzdem mich auf den Weg nach draußen machen?",
       ],
-      hasTimer: true,
+      hasTimer: false,
       image: "img/Bild3.png",
       name: ["Anna"],
       next: [
@@ -254,7 +253,7 @@ const story = {
       image: "img/Bild5.0.png",
       name: ["Anna"],
       next: [
-        { key: "Blick_erhaschen", label: "Ich möchte es Wagen" },
+        { key: "Blick_erhaschen", label: "Ich möchte es wagen" },
         { key: "Blick_nicht_erhaschen", label: "lieber nicht" }
       ]
     },
@@ -390,7 +389,7 @@ const story = {
       image: "img/Bild13.png",
       name: ["Mann"],
       next: [
-        { key: "In_der_Wohnung(F)", label: "Weiter" }
+        { key: "In_der_Wohnung_Freundin_Joggen", label: "Weiter" }
       ]
     },
 
@@ -427,7 +426,7 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "In_der_Wohnung(F)", label: "Weiter" }
+        { key: "In_der_Wohnung_Freundin_Joggen", label: "Weiter" }
       ]
     },
 
@@ -466,7 +465,7 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "In_der_Wohnung(F)", label: "Weiter" }
+        { key: "In_der_Wohnung_Freundin_Joggen", label: "Weiter" }
       ]
     },
 
@@ -489,7 +488,7 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "In_der_Wohnung(F)", label: "Weiter" }
+        { key: "In_der_Wohnung_Freundin_Joggen", label: "Weiter" }
       ]
     },
 
@@ -527,7 +526,7 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "In_der_Wohnung(F)", label: "Weiter" }
+        { key: "In_der_Wohnung_Freundin_Einkaufen", label: "Weiter" }
       ]
     },
 
@@ -550,9 +549,154 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "In_der_Wohnung(F)", label: "Weiter" }
+        { key: "In_der_Wohnung_Freundin_Einkaufen", label: "Weiter" }
       ]
     },
+    In_der_Wohnung_Freundin_Einkaufen: {
+      id: "In_der_Wohnung_Freundin_Einkaufen",
+      text: ["Als Anna vom Einkaufen zurückkommt, wirkt sie regelrecht beängstigt und auf der Hut, dabei erzählt sie von sich aus nicht, was passiert ist. Obwohl sie schon eine Weile mit uns zusammenlebt, ist sie immer noch sehr verschlossen und wird sich auch bald nicht öffnen, obwohl ich mir das von ihr wünschen würde."
+      ],
+      image: "img/Bild15.2.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "In_der_Wohnung_Freundin_Einkaufen_2", label: "Weiter" }
+      ]
+    },
+    In_der_Wohnung_Freundin_Einkaufen_2: {
+      id: "In_der_Wohnung_Freundin_Einkaufen_2",
+      text: ["Denn ich weiß von früher, bevor ihre Mutter und ihr Stiefvater vor fünf Jahren weggezogen sind, wie schwierig ihre Kindheit gewesen war, und wünsche mir von ganzem Herzen, dass es ihr jetzt besser geht."
+      ],
+      image: "img/Bild15.3.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Auf_dem_Sofa", label: "Weiter" }
+      ]
+    },
+    In_der_Wohnung_Freundin_Joggen: {
+      id: "In_der_Wohnung_Freundin_Joggen",
+      text: ["Als Anna vom Joggen zurückkommt, wirkt sie regelrecht beängstigt und auf der Hut, dabei erzählt sie von sich aus nicht, was passiert ist. Obwohl sie schon eine Weile mit uns zusammenlebt, ist sie immer noch sehr verschlossen und wird sich auch bald nicht öffnen, obwohl ich mir das von ihr wünschen würde."
+      ],
+      image: "img/Bild15.2.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "In_der_Wohnung_Freundin_Joggen_2", label: "Weiter" }
+      ]
+    },
+    In_der_Wohnung_Freundin_Joggen_2: {
+      id: "In_der_Wohnung_Freundin_Joggen_2",
+      text: ["Denn ich weiß von früher, bevor ihre Mutter und ihr Stiefvater vor fünf Jahren weggezogen sind, wie schwierig ihre Kindheit gewesen war, und wünsche mir von ganzem Herzen, dass es ihr jetzt besser geht."
+      ],
+      image: "img/Bild15.3.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Auf_dem_Sofa", label: "Weiter" }
+      ]
+    },
+    Auf_dem_Sofa: {
+      id: "Auf_dem_Sofa",
+      text: ["Bislang vertraut Anna sich mir nicht an, und ich will sie auch nicht dazu drängen. Ich überlege mir, dass wir zusammen ein paar Folgen Gossip Girl schauen könnten, als kleine Ablenkung. Wir haben es uns bereits auf dem Sofa gemütlich gemacht, als Annas Handy klingelt.",
+            "Anna erschrickt so sehr, dass einige Popcornstücke aus dem Behälter fliegen."
+      ],
+      image: "img/Bild15.4.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Auf_dem_Sofa_2", label: "Weiter" }
+      ]
+    },
+    
+    Auf_dem_Sofa_2: {
+      id: "Auf_dem_Sofa_2",
+      text: ["Ich werfe einen Blick auf ihr Handy auf dem Kaffeetisch. Es ist eine unbekannte Nummer.",
+            "Ich nehme ihr das Popcorn aus der Hand und sage: „Geh ran, es könnte wichtig sein.“"
+      ],
+      image: "img/Bild16.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Anna_geht_ran", label: "Weiter" }
+      ]
+    },
+    Anna_geht_ran: {
+      id: "Anna_geht_ran",
+      text: ["Anna streckt ihre Hand nach ihrem iPhone aus und drückt auf Annehmen. Sie hält sich ihr Handy zögerlich ans Ohr und lauscht, ohne eine Begrüßung auszusprechen.",
+            "In ihren Augen spiegelt sich Sorge, sie wirkt sehr erschrocken, zwar nicht so sehr wie vor einigen Tagen."
+      ],
+      image: "img/Bild17.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Anna_geht_ran_2", label: "Weiter" }
+      ]
+    },
+    Anna_geht_ran_2: {
+      id: "Anna_geht_ran_2",
+      text: ["Als die Stimme in ihrem iPhone aufhört zu sprechen, beruhigt sie sich, und die Sorge in ihren Augen erlischt. Ich bemerke, dass ein Stein von ihrer Schulter gefallen ist, doch was genau war dieser Stein gewesen?",
+            "Einige Minuten später höre ich auch schon, wie sich Anna verabschiedet; das einzige, was Anna während des ganzen Anrufs erwidert hat, waren zustimmendes „mhm“ und „ich texte dir meine Adresse“. Was genau meint sie mit Adresse? Wie kann es sein, dass sie zu Beginn des Anrufs so verängstigt war und jetzt auf einmal unsere Adresse preisgibt?"
+      ],
+      image: "img/Bild15.5.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Anna_läuft_weg", label: "Weiter" }
+      ]
+    },
+    Anna_läuft_weg: {
+      id: "Anna_läuft_weg",
+      text: ["Als ich immer noch gedankenversunken versuche herauszufinden, was gerade passiert ist, steht Anna schweigsam auf und macht sich auf den Weg zu ihrem Zimmer.",
+            "Das kann doch nicht ihr Ernst sein",
+            "Soll ich Anna über den Anruf ausfragen?"
+      ],
+      image: "img/Bild15.6.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Anna_fragen", label: "Anna fragen" },
+        { key: "Anna_nicht_fragen", label: "Anna nicht fragen" }
+      ]
+    },
+    Anna_fragen: {
+      id: "Anna_fragen",
+      text: ["Sie kann das alles nicht im leeren Raum stehen lassen, deshalb frage ich sie, wer das am anderen Ende des Telefons war.",
+            "Anna schaut nicht einmal zurück zu mir, als sie erwidert, es sei niemand gewesen – klar war es niemand gewesen, denn heutzutage führt man Selbstgespräche über das Telefon."
+      ],
+      image: "img/Bild15.6.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Mann_kommt", label: "Weiter" }
+      ]
+    },
+    Anna_nicht_fragen: {
+      id: "Anna_nicht_fragen",
+      text: ["Ich bin immer noch überzeugt, dass Anna sich mir gegenüber öffnen wird, sobald sie bereit dazu ist. Aus diesem Grund lasse ich sie in ihr Zimmer zurückkehren und lasse mich ins Sofa zurückplumpsen. Dann schaue ich halt allein fern."
+      ],
+      image: "img/Bild15.6.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "Mann_kommt", label: "Weiter" }
+      ]
+    },
+    Mann_kommt:{
+      id: "Mann_kommt",
+      text: [""
+      ],
+      image: "img/Bild15.6.png",
+      hasTimer: false,
+      name: ["Freundin"],
+      next: [
+        { key: "", label: "Weiter" }
+     ]
+    },
+
+
+
+
 
     verloren: {
       id: "verloren",
@@ -561,7 +705,7 @@ const story = {
       image: "img/weihnachtsbaumBild.jpg",
       hasTimer: false,
       next: [
-        { key: "In_der_Wohnung(F)", label: "Direkt nach Hause" }
+        { key: "In_der_Wohnung_Freundin", label: "Direkt nach Hause" }
       ]
     },
 
