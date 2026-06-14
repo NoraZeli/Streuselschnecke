@@ -863,7 +863,9 @@ const story = {
       name: ["Anna"],
       next: [
         { key: "situation_fragen", label: "Ist die Situation zuhause besser geworden?"},
-        { key: "ImmerNochDa_fragen", label: "Ist er immer noch da?"}
+        { key: "ImmerNochDa_fragen", label: "Ist er immer noch da?"},
+        { key: "EtwasZsmUnternehmen", label: "Wollen wir mal wieder etwas zusammen unternehmen?"}
+
      ]
     },
     situation_fragen:{
@@ -981,7 +983,7 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "EtwasZsmUnternehmen", label: "Etwas zusammen unternehmen"}
+        { key: "Besuch_bei_Arbeit", label: "Ihn besuchen gehen" }
      ]
     },
     EtwasZsmUnternehmen:{
@@ -1018,7 +1020,7 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "Besuch_bei_Arbeit", label: "Weiter"}
+        { key: "Besuch_bei_Arbeit", label: "Ihn Besuchen gehen" }
      ]
     },
     Besuch_bei_Arbeit:{
@@ -1208,7 +1210,7 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "Zwei_Jahre_später", label: "Weiter"},
+        { key: "Zwei_Jahre_später", label: "Zwei Jahre später"},
      ],
     },
     Bilderrahmen_nicht_umdrehen:{
@@ -1232,7 +1234,7 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "Zwei_Jahre_später", label: "Weiter"},
+        { key: "Zwei_Jahre_später", label: "Zwei Jahre später"},
      ],
     },
     Zwei_Jahre_später:{
