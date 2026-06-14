@@ -93,7 +93,7 @@ const story = {
           "Oder lieber bei der nächstbesten Jugendherberge die Nächte verbringen."
       ],
       hasTimer: false,
-      image: "img/Bild1.png",
+      image: "img/Bild1.1.png",
       name: ["Anna"],
       next: [
         { key: "Berlin", label: "zu deiner Freundin" },
@@ -146,7 +146,7 @@ const story = {
       image: "img/Bild3.31.png",
       name: ["Anna"],
       next: [
-        { key: "Zuhause", label: "Weiter" }
+        { key: "Zuhause", label: "Elf Monate später" }
       ]
     },
 
@@ -199,7 +199,7 @@ const story = {
       id: "Zuhause_2",
       text: ["Denn mein Leben besteht aus Schule und Arbeit. Für Freizeit habe ich wenig Platz in meinem Alltag und wenn ich Zeit habe, gehe ich gerne joggen, es hilft mir, über Dinge nachzudenken und Dampf abzulassen.",
       ],
-      image: "img/Bild3.4.png",
+      image: "img/Bild3.5.png",
       hasTimer: false,
       name: ["Anna"],
       next: [
@@ -304,9 +304,9 @@ const story = {
       name: ["Anna"],
       hasTimer: false,
       next: [
-        { key: "Rechts_abbiegen", label: "rechts" },
         { key: "Links_abbiegen", label: "links" },
-        { key: "Direkt_nach_Hause", label: "geradeaus nach Hause" }
+        { key: "Direkt_nach_Hause", label: "geradeaus nach Hause" },
+        { key: "Rechts_abbiegen", label: "rechts" }
       ]
     },
 
@@ -902,7 +902,7 @@ const story = {
         { key: "situation_S2", label: "Weiter"}
      ]
     },
-    situationS2:{
+    situation_S2:{
       id: "situation_S2",
       text: ["Manchmal genügte auch ein umgekipptes Glas oder ein falsch gedeckter Tisch, damit die Stimmung unseres Stiefvaters kippte.",
         "Ohne Anna war es zuhause einfach nicht dasselbe, aber ich bin froh, dass wenigstens sie entkommen konnte."
@@ -1053,7 +1053,7 @@ const story = {
       text: ["Ich schulde anderen normalerweise ungern etwas und bin nicht begeistert, wenn ich von jemandem abhängig bin. Doch es würde mein Leben immerhin vereinfachen.",
             "Deshalb fasse ich mir Mut und frage ihn."
       ],
-      image: "img/Bild27.1.png",
+      image: "img/Bild 27.1.png",
       hasTimer: false,
       name: ["Anna"],
       next: [
@@ -1192,7 +1192,6 @@ const story = {
       id: "Bilderrahmen_umdrehen_4",
       text: ["Als er an der Tür ankommt, kreuzen sich unsere Blicke, und er fragt, ob es mir gut gehe, denn ich sehe etwas bestürzt aus.",
             "Daraufhin antworte ich, dass ich auch selbst hoffe, einmal so erfolgreich zu werden wie er. Dabei zeige ich auf die goldene Lola-Statuette."
-
       ],
         image: "img/Bild37.png",
       hasTimer: false,
@@ -1203,8 +1202,8 @@ const story = {
     },
     Bilderrahmen_umdrehen_5:{
       id: "Bilderrahmen_umdrehen_5",
-      text: ["Als er an der Tür ankommt, kreuzen sich unsere Blicke, und er fragt, ob es mir gut gehe, denn ich sehe etwas bestürzt aus.",
-            "Daraufhin antworte ich, dass ich auch selbst hoffe, einmal so erfolgreich zu werden wie er. Dabei zeige ich auf die goldene Lola-Statuette."
+      text: ["Sein Mund verzieht sich zu einem traurigen Lächeln, und er winkt mich zu sich herbei.",
+            "„Komm, ich zeige dir, wie ein Drehbuch aufgebaut ist.“"
       ],
         image: "img/Bild37.1.png",
       hasTimer: false,
@@ -1228,7 +1227,6 @@ const story = {
       id: "Bilderrahmen_nicht_umdrehen_2",
       text: ["Deshalb drehe ich mich um und lasse den Blick ein letztes Mal durch den Raum schweifen, bevor er seinen Kopf durch den Türrahmen steckt. Sein Mund ist zu einem Lächeln verzogen, und er hält mir das Drehbuch entgegen.",
             "Dabei sagt er: „Hab’s gefunden!“"
-
       ],
         image: "img/Bild37.png",
       hasTimer: false,
@@ -1254,7 +1252,6 @@ const story = {
       text: ["Als ich ihn zum dritten Mal in dieser Woche besuche, fragt er mich, ob ich ihm Morphium besorgen könnte, weil er Angst vor dem Tod hat und es schnell hinter sich bringen will.",
             "Ich entscheide mich, ihm keines zu bringen. Stattdessen frage ich ihn, ob er etwas anderes möchte.",
             "Hustend antwortet er: „Ich hätte gerne Streuselschnecken.“"
-
       ],
         image: "img/Bild40.2.png",
       hasTimer: false,
@@ -1296,7 +1293,7 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "Fragen_stellen_2", label: "weiter"},
+        { key: "Fragen_stellen_2", label: "Weiter"},
      ],
     },
     Fragen_stellen_2:{
@@ -1317,22 +1314,33 @@ const story = {
       id: "weitere_Fragen_stellen",
       text: ["Ohne dass ich ihn noch länger warten lasse, frage ich ihn: „Warum hast du mich erst vor 3 Jahren kontaktiert, warum nicht früher?“"
       ],
+        image: "img/Bild43.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "weitere_Fragen_stellen_2", label: "Weiter" },
+     ],
+    },
+    weitere_Fragen_stellen_2:{
+      id: "weitere_Fragen_stellen_2",
+      text: ["Er muss einige Minuten darüber nachdenken und wirkt auf einmal trauriger als vorher. Ich hätte das nicht fragen sollen. Doch ich kann nun mal nicht zurücknehmen, was ich gesagt habe."
+      ],
         image: "img/Bild44.png",
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "weitere_Fragen_stellen_2", label: "Noch eine Frage stellen" },
+        { key: "weitere_Fragen_stellen_3", label: "Weiter" },
      ],
     },
-    weitere_Fragen_stellen_22:{
-      id: "weitere_Fragen_stellen",
+    weitere_Fragen_stellen_3:{
+      id: "weitere_Fragen_stellen_3",
       text: ["„Ich dachte, du könntest mir nicht verzeihen, nachdem ich euch verlassen habe, denn ich konnte es mir selbst auch nicht verzeihen. Ich war jung und realisierte nicht, welche Folgen meine Abwesenheit für euch hätte. Ich hatte nur an mich selbst gedacht“, erwidert er ganz aufgewühlt und den Tränen nahe."
       ],
         image: "img/Bild44.1.png",
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "Streuselschnecke_essen", label: "Noch eine Frage stellen" },
+        { key: "Streuselschnecke_essen", label: "Weiter" },
      ],
     },
     Streuselschnecke_essen:{
@@ -1343,22 +1351,78 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "Streuselschnecke_essen_2", label: "weiter" },
+        { key: "Streuselschnecke_essen_2", label: "Weiter" },
      ],
     },
     Streuselschnecke_essen_2:{
       id: "Streuselschnecke_essen_2",
       text: ["Nachdem er sich mit einem schwachen Lächeln die Finger sauberleckt – obwohl er nur zwei kleine Bisse von seiner Streuselschnecke genommen hatte –, sagt er: „Ich hätte gerne mit dir und deiner Schwester zusammengelebt und dachte, ich hätte noch Zeit.“"
       ],
-        image: "img/Bild46.png",
+        image: "img/Bild47.png",
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "Streuselschnecke_essen_3", label: "weiter" },
+        { key: "Streuselschnecke_essen_3", label: "Weiter" },
      ],
     },
+    Streuselschnecke_essen_3:{
+      id: "Streuselschnecke_essen_3",
+      text: ["Seine Augen fallen zu, sein Atem wird immer unregelmäßiger und flacher. "
+      ],
+        image: "img/Bild48.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Streuselschnecke_essen_4", label: "Weiter" },
+     ],
+    },
+    Streuselschnecke_essen_4:{
+      id: "Streuselschnecke_essen_4",
+      text: ["Doch er murmelt noch: „Es tut mir leid“, bevor er seinen letzten Atemzug nimmt und der durchgehende Alarmton des Monitors den Raum erfüllt."
+      ],
+        image: "img/Bild49.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Beerdigung", label: "Fünf Tage später" },
+     ],
+    },
+  
 
-
+    Beerdigung:{
+      id: "Beerdigung",
+      text: ["Fünf Tage später gehen meine Schwester und ich zu seiner Beerdigung, doch unsere Mutter kommt nicht, denn sie ist mit anderem beschäftigt; "
+      ],
+        image: "img/Bild50.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Beerdigung_2", label: "Weiter" },
+     ],
+    },
+    Beerdigung_2:{
+      id: "Beerdigung_2",
+      text: ["außerdem hatte sie unseren Vater zu wenig gekannt und nicht geliebt."
+      ],
+        image: "img/Bild51.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Ende", label: "The End" },
+     ],
+    },
+    Ende:{
+      id: "Ende",
+      text: ["Nun hast du das Ende der Geschichte erreicht.",
+            "Vielen Dank für das Spielen! :)"
+      ],
+        image: "",
+      hasTimer: false,
+      name: ["- Leonora & Lisa"],
+      next: [
+        { key: "Familienhaus", label: "Wiederholen" },
+     ],
+    },
 
 
 
@@ -1375,30 +1439,7 @@ const story = {
       ]
     },
 
-    
-    TextEingabeBsp: {
-      id: "TextEingabeBsp",
-      text: ["Direkt als du andere Schülerinnen und Schüler fragen willst, ob sie eine Jazz-Band gründen wollen, wirst du abgelenkt.",
-        "Zu einer Runde Brawl Stars kannst du kaum Nein sagen.",
-        "Wie heisst nochmals die In-Game-Währung, mit der man neue Brawler freischalten kann?",
-        "Deine Mitschülerinnen und Mitschüler warten auf deine Antwort:", 
-        "Wenn sie richtig ist, gehst du zur Lehrperson und fragst nach Tipps zur Gründung einer Jazz-Band.",
-      ],
-      image: "img/brawlStars.jpg",
-      hasTimer: true,
-      // Hier definieren wir die Benutzereingabe, die an diesem Story-Punkt benötigt wird.
-      // Der SuccessKey enthält der Identifier des Story-Objekts, welches als nächstes ausgeführt werden soll
-      // Der FailureKey enthält der Identifier des Story-Objekts, welches als nächstes ausgeführt werden soll, falls die Benutzereingabe falsch ist.
-      // Die answer ist die richtige Antwort, die mit der Benutzereingabe verglichen wird.
-      // Das Label ist der Text, der im Input-Feld als Platzhalter angezeigt wird.
-      input: {  
-        type: "text",
-        label: "Gib hier deine Antwort ein:",
-        answer: "Credits",
-        successKey: "bandGruenden",
-        failureKey: "brawlStarsVerlieren"
-      }
-    },
+
 }
 
     
