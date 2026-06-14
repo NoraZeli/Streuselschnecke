@@ -886,22 +886,22 @@ const story = {
       hasTimer: false,
       name: ["Anna"],
       next: [
-        { key: "situationS", label: "Weiter"}
+        { key: "situation_S", label: "Weiter"}
      ]
     },
-    situationS:{
-      id: "situationS",
+    situation_S:{
+      id: "situation_S",
       text: ["Wenn ich ehrlich bin, hat sich nichts verbessert, und Mama vermisst Anna gar nicht mal, oder sie lässt es sich nicht anmerken. Über unseren Stiefvater muss ich gar nicht reden, denn dem geht’s blendend, seitdem Anna nicht mehr hier ist. Seit sie weg ist, gibt es niemanden mehr, der ihm die Stirn bietet. Ich selbst kann dafür keinen Mut aufbringen. Denn Mama schläft meistens nach der Arbeit aufgrund all des Biers und jeglicher anderen Spirituosen, die sie in sich hineinkippt, ein."
       ],
       image: "img/Bild25.png",
       hasTimer: false,
       name: ["Schwester"],
       next: [
-        { key: "situationS2", label: "Weiter"}
+        { key: "situation_S2", label: "Weiter"}
      ]
     },
     situationS2:{
-      id: "situationS2",
+      id: "situation_S2",
       text: ["Manchmal genügte auch ein umgekipptes Glas oder ein falsch gedeckter Tisch, damit die Stimmung unseres Stiefvaters kippte.",
         "Ohne Anna war es zuhause einfach nicht dasselbe, aber ich bin froh, dass wenigstens sie entkommen konnte."
       ],
@@ -909,11 +909,11 @@ const story = {
       hasTimer: false,
       name: ["Schwester"],
       next: [
-        { key: "situationS3", label: "Weiter"}
+        { key: "situation_S3", label: "Weiter"}
      ]
     },
-    situationS3:{
-      id: "situationS3",
+    situation_S3:{
+      id: "situation_S3",
       text: ["„Ich schwöre dir, ich werde genügend Geld auftreiben, sodass ich dich von ihnen befreien kann. Du musst nur noch etwas aushalten“, sagte Anna mit bebender Stimme.",
         "Aus diesem Grund wollte ich ihr nicht die Wahrheit über die Lage zuhause preisgeben, denn ich kenne sie gut und weiß, dass es sie auffressen würde und sie sich nur selbst die Schuld an allem geben würde."
       ],
@@ -984,6 +984,381 @@ const story = {
         { key: "EtwasZsmUnternehmen", label: "Etwas zusammen unternehmen"}
      ]
     },
+    EtwasZsmUnternehmen:{
+      id: "EtwasZsmUnternehmen",
+      text: ["„Ich weiß nicht, ob ich dir das schon mal erzählt habe, aber als du etwa vier Jahre alt warst, sind Mama, du und ich zusammen einkaufen gegangen. Du hast vorne im Einkaufswagen gesessen. Als wir zur Kasse kamen, hat die Kassiererin dich angeschaut und gemeint, du seist süß.",
+            "Du hast in der Nase gepopelt und sie stolz mit ausgestreckter Hand gefragt: «Hier. Willst du einen Popel?»"
+      ],
+      image: "img/Bild25.2.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "EtwasZsmUnternehmen_2", label: "Weiter"}
+     ]
+    },
+    EtwasZsmUnternehmen_2:{
+      id: "EtwasZsmUnternehmen_2",
+      text: ["Meine Schwester fing laut an zu lachen. „Igitt, wie eklig!“, rief sie dazwischen, während sie kaum noch Luft bekam. Ich konnte mir richtig vorstellen, wie ihre Wangen rot wurden und sie versuchte, die Tränen vor Lachen zurückzuhalten. Sie so lachen zu hören, entfachte eine Wärme in meiner Brust, und ich wünschte mir, sie würde öfter so lachen.",
+            "„Ja, schäm dich“, sagte ich mit einem Grinsen."
+      ],
+      image: "img/Bild25.1.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "EtwasZsmUnternehmen_3", label: "Weiter"}
+     ]
+    },
+    EtwasZsmUnternehmen_3:{
+      id: "EtwasZsmUnternehmen_3",
+      text: ["„Du darfst das niemandem erzählen. Was wäre das für eine Blamage, wenn jeder wüsste, dass ich Popel wie Geschenke verteilt habe“, sagte sie, während sie noch immer versuchte, ihr Lachen zu unterdrücken.",
+            "„Hast du Lust, nächste Woche bowlen zu gehen?“, fragte ich, nachdem ich merkte, dass sie sich beruhigt hatte.",
+            "Ihre Antwort war ein fröhliches: „Finde ich mega!“"
+      ],
+      image: "img/Bild25.3.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Besuch_bei_Arbeit", label: "Weiter"}
+     ]
+    },
+    Besuch_bei_Arbeit:{
+      id: "Besuch_bei_Arbeit",
+      text: ["Einige Tage später besuche ich den Mann bei der Arbeit, wo er als Drehbuchautor arbeitet und Regie bei Filmen führt."
+      ],
+      image: "img/Bild26.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Besuch_bei_Arbeit_2", label: "Weiter"}
+     ]
+    },
+    Besuch_bei_Arbeit_2:{
+      id: "Besuch_bei_Arbeit_2",
+      text: ["Sein Büro ist ordentlich aufgeräumt und er besitzt einige Auszeichnungen an den Wänden, die ich mir noch nicht so genau aus der Nähe betrachten konnte. Wie es scheint, ist er nicht schlecht in dem, was er tut.",
+            "Während unserer Treffen hatte ich mich schon mehrmals gefragt, ob er mir Geld dafür geben würde, dass wir uns treffen. Doch er gab mir keins.",
+            "Soll ich ihn darum bitten?"
+      ],
+      image: "img/Bild27.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Geld_bitten", label: "Geld bitten"},
+        { key: "Geld_nicht_bitten", label: "Geld nicht bitten"}
+     ]
+    },
+    Geld_bitten:{
+      id: "Geld_bitten",
+      text: ["Ich schulde anderen normalerweise ungern etwas und bin nicht begeistert, wenn ich von jemandem abhängig bin. Doch es würde mein Leben immerhin vereinfachen.",
+            "Deshalb fasse ich mir Mut und frage ihn."
+      ],
+      image: "img/Bild27.1.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Geld_bitten_2", label: "Weiter"},
+     ]
+    },
+    Geld_bitten_2:{
+      id: "Geld_bitten_2",
+      text: ["Er kratzt sich am Kopf und wirkt dabei verlegen. Ich sehe, wie bei ihm die Zahnräder im Kopf arbeiten.",
+            "Dann antwortet er: „Äh… ich… dachte, du wärst schon versorgt.“",
+            "Eine kurze Pause.",
+            "„Entschuldige… das hätte ich nicht annehmen sollen. Wenn du Hilfe brauchst, könnte ich dir etwas geben.“"
+      ],
+      image: "img/Bild29.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Geld_bitten_3", label: "Weiter"},
+     ]
+    },
+    Geld_bitten_3:{
+      id: "Geld_bitten_3",
+      text: ["Ruckartig schüttle ich den Kopf. Peinlich berührt von seiner Antwort merke ich, wie ich wahrscheinlich knallrot werde. Das hätte ich nicht fragen sollen — was für ein Dussel bin ich nur.",
+            "Ich brauche seine Hilfe nicht. Ich kann gut für mich allein sorgen. Es ist nicht ohne Grund, dass ich neben der Schule putze und Kinder hüte. Bald werde ich sowieso alt genug sein, um als Kellnerin zu arbeiten, und vielleicht wird ja irgendwann noch etwas Richtiges aus mir."
+      ],
+      image: "img/Bild28.1.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Geld_bitten_4", label: "Weiter"},
+     ]
+    },
+    Geld_bitten_4:{
+      id: "Geld_bitten_4",
+      text: ["Ich werde aus meinen Gedanken gerissen, als er stolz verkündet, er würde schnell sein bestes Drehbuch holen, um es mir zu zeigen.",
+            "Bevor ich auch nur eine Zustimmung erwidern kann, verlässt er den Raum."
+      ],
+      image: "img/Bild28.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Bilderrahmen", label: "Weiter"},
+     ]
+    },
+    Geld_nicht_bitten:{
+      id: "Geld_nicht_bitten",
+      text: ["Ich unterlasse es, ihn nach Geld zu fragen, denn eigentlich kann ich mich auch gut selbst versorgen. Ein Jahr lang konnte ich mich selbst über Wasser halten mit Putzen und Kinder hüten, während ich noch immer in die Schule gehe, und bald kann ich auch als Kellnerin arbeiten gehen."
+      ],
+      image: "img/Bild31.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Geld_nicht_bitten_2", label: "Weiter"},
+     ]
+    },
+    Geld_nicht_bitten_2:{
+      id: "Geld_nicht_bitten_2",
+      text: ["Mit halber Aufmerksamkeit nehme ich wahr, dass der Mann eines seiner Drehbücher holen will, damit er es mir zeigen kann."
+      ],
+      image: "img/Bild32.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Bilderrahmen", label: "Weiter"},
+     ]
+    },
+    Bilderrahmen:{
+      id: "Bilderrahmen",
+      text: ["Während er abwesend ist, nehme ich mir die Zeit, um in seinem Büro umherzugehen."
+      ],
+      image: "img/Bild33.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Bilderrahmen_2", label: "Weiter"},
+     ]
+    },
+    Bilderrahmen_2:{
+      id: "Bilderrahmen_2",
+      text: ["Dabei schaue ich mir die Auszeichnungen, die an der Wand hängen, etwas genauer an. Eines davon ist ein Zertifikat der Lola und darunter die dazugehörige goldene Statuette. Von der Lola habe ich im Fernsehen schon einiges gehört, aber ich verfolge solche Filmpreisverleihungen nicht wirklich."
+      ],
+      image: "img/Bild33.1.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Bilderrahmen_3", label: "Weiter"},
+     ]
+    },
+    Bilderrahmen_3:{
+      id: "Bilderrahmen_3",
+      text: ["Mein Blick wandert weiter zu seinem Schreibtisch, auf dem ein umgedrehter Bilderrahmen steht.",
+            "Soll ich den Rahmen umdrehen?"
+      ],
+      image: "img/Bild35.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Bilderrahmen_umdrehen", label: "Ja" },
+        { key: "Bilderrahmen_nicht_umdrehen", label: "Nein" }
+     ]
+    },
+    Bilderrahmen_umdrehen:{
+      id: "Bilderrahmen_umdrehen",
+      text: ["Ich bin nun mal neugierig und gebe, ohne weiter nachzudenken, nach. Als ich das Bild umdrehe, lächelt mir ein junger Mann entgegen. Auf seinem Schoß sitzt ein kleines Mädchen, sicher zwei oder drei Jahre alt. Sie hat die Finger im Mund."
+      ],
+      image: "img/Bild38.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Bilderrahmen_umdrehen_2", label: "Weiter"},
+     ]
+    },
+    Bilderrahmen_umdrehen_2:{
+      id: "Bilderrahmen_umdrehen_2",
+      text: ["Der Anblick dieses Bildes weckt eine Erinnerung in mir. Wie ich zusammengekauert unter der Bettdecke liege und versuche einzuschlafen, doch der Streit von Mama und Papa dringt ganz leicht durch meine Zimmertür hindurch. Ich kann mich noch erinnern, dass im Streit Worte wie Karriere, Chancen und Träume gefallen sind."
+      ],
+      image: "img/Bild39.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Bilderrahmen_umdrehen_3", label: "Weiter"},
+     ]
+    },
+    Bilderrahmen_umdrehen_3:{
+      id: "Bilderrahmen_umdrehen_3",
+      text: ["Lange kann ich nicht über diese Erinnerung nachdenken, denn ich höre ihn schon kommen, und bevor er mich erwischen kann, drehe ich den Rahmen wieder um."
+      ],
+        image: "img/Bild36.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Bilderrahmen_umdrehen_4", label: "Weiter"},
+     ]
+    },
+     Bilderrahmen_umdrehen_4:{
+      id: "Bilderrahmen_umdrehen_4",
+      text: ["Als er an der Tür ankommt, kreuzen sich unsere Blicke, und er fragt, ob es mir gut gehe, denn ich sehe etwas bestürzt aus.",
+            "Daraufhin antworte ich, dass ich auch selbst hoffe, einmal so erfolgreich zu werden wie er. Dabei zeige ich auf die goldene Lola-Statuette."
+
+      ],
+        image: "img/Bild37.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Bilderrahmen_umdrehen_5", label: "Weiter"},
+     ],
+    },
+    Bilderrahmen_umdrehen_5:{
+      id: "Bilderrahmen_umdrehen_5",
+      text: ["Als er an der Tür ankommt, kreuzen sich unsere Blicke, und er fragt, ob es mir gut gehe, denn ich sehe etwas bestürzt aus.",
+            "Daraufhin antworte ich, dass ich auch selbst hoffe, einmal so erfolgreich zu werden wie er. Dabei zeige ich auf die goldene Lola-Statuette."
+      ],
+        image: "img/Bild37.1.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Zwei_Jahre_später", label: "Weiter"},
+     ],
+    },
+    Bilderrahmen_nicht_umdrehen:{
+      id: "Bilderrahmen_nicht_umdrehen",
+      text: ["Mein Blick bleibt kurz an dem Bilderrahmen hängen, doch ich entscheide mich, ihn nicht umzudrehen. Denn ich möchte seine Privatsphäre respektieren, und so gut kennen wir uns auch nicht, dass ich einfach in seinen Sachen herumschnüffeln kann."
+      ],
+        image: "img/Bild36.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Bilderrahmen_nicht_umdrehen_2", label: "Weiter"},
+     ],
+    },
+    Bilderrahmen_nicht_umdrehen_2:{
+      id: "Bilderrahmen_nicht_umdrehen_2",
+      text: ["Deshalb drehe ich mich um und lasse den Blick ein letztes Mal durch den Raum schweifen, bevor er seinen Kopf durch den Türrahmen steckt. Sein Mund ist zu einem Lächeln verzogen, und er hält mir das Drehbuch entgegen.",
+            "Dabei sagt er: „Hab’s gefunden!“"
+
+      ],
+        image: "img/Bild37.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Zwei_Jahre_später", label: "Weiter"},
+     ],
+    },
+    Zwei_Jahre_später:{
+      id: "Zwei_Jahre_später",
+      text: ["Zwei Jahre nach unserem ersten Treffen sagt er mir, dass er krank ist. Obwohl wir in diesen zwei Jahren sehr viel Zeit miteinander verbracht haben, sind wir uns immer noch etwas fremd.",
+            "Doch ich besuche ihn so oft, wie ich nur kann. Er hat auch meine Schwester kennengelernt, und die beiden verstehen sich sehr gut, da sie genauso interessiert an Filmen ist wie er selbst."
+      ],
+        image: "img/Bild40.1.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Zwei_Jahre_später_2", label: "Weiter"},
+     ],
+    },
+    Zwei_Jahre_später_2:{
+      id: "Zwei_Jahre_später_2",
+      text: ["Als ich ihn zum dritten Mal in dieser Woche besuche, fragt er mich, ob ich ihm Morphium besorgen könnte, weil er Angst vor dem Tod hat und es schnell hinter sich bringen will.",
+            "Ich entscheide mich, ihm keines zu bringen. Stattdessen frage ich ihn, ob er etwas anderes möchte.",
+            "Hustend antwortet er: „Ich hätte gerne Streuselschnecken.“"
+
+      ],
+        image: "img/Bild40.2.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Streuselschnecken_bringen", label: "Weiter"},
+     ],
+    },
+    Streuselschnecken_bringen:{
+      id: "Streuselschnecken_bringen",
+      text: ["Bei meinem nächsten Besuch bringe ich ihm diese, sogar zwei Bleche davon. Ich lege die Streuselschnecken auf die Fensterbank.",
+            "Soll ich ihm noch einige Fragen stellen, weil seine Zeit begrenzt ist und er sonst so wenig über sich und die Vergangenheit spricht?"
+      ],
+        image: "img/Bild41.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Fragen_stellen", label: "Ja" },
+        { key: "Streuselschnecke_essen", label: "Nein" }
+     ],
+    },
+    Fragen_stellen:{
+      id: "Fragen_stellen",
+      text: ["Ich gehe auf ihn zu und setze mich neben ihn.",
+            "„Weshalb hast du dir Streuselschnecken gewünscht?“, frage ich ihn."
+      ],
+        image: "img/Bild43.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Rückblick_Isabel", label: "Weiter"},
+     ],
+    },
+    Rückblick_Isabel:{
+      id: "Rückblick_Isabel",
+      text: ["Daraufhin antwortet er: „Isabel backte früher immer die köstlichsten Streuselschnecken, bevor unsere Beziehung den Bach runterging. Bevor ich immer länger von zu Hause weg war, um meine Träume als Drehbuchautor und Regisseur zu verwirklichen. Bevor wir anfingen zu streiten und bevor ich euch mit ihr allein ließ.“"
+      ],
+        image: "img/Bild42.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Fragen_stellen_2", label: "weiter"},
+     ],
+    },
+    Fragen_stellen_2:{
+      id: "Fragen_stellen_2",
+      text: ["Seine Aussage ließ meine Augen nass werden. Ehe ich es verhindern konnte, rollen Tränen über meine Wangen.",
+          "Ich möchte noch mehr Gewissheit erlangen und ihm auch die Chance geben, sich zu erklären.",
+          "Soll ich ihm noch eine Frage stellen?"
+      ],
+        image: "img/Bild43.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "weitere_Fragen_stellen", label: "Noch eine Frage stellen" },
+        { key: "Streuselschnecke_essen", label: "Keine weiteren Fragen stellen" }
+     ],
+    },
+    weitere_Fragen_stellen:{
+      id: "weitere_Fragen_stellen",
+      text: ["Ohne dass ich ihn noch länger warten lasse, frage ich ihn: „Warum hast du mich erst vor 3 Jahren kontaktiert, warum nicht früher?“"
+      ],
+        image: "img/Bild44.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "weitere_Fragen_stellen_2", label: "Noch eine Frage stellen" },
+     ],
+    },
+    weitere_Fragen_stellen_22:{
+      id: "weitere_Fragen_stellen",
+      text: ["„Ich dachte, du könntest mir nicht verzeihen, nachdem ich euch verlassen habe, denn ich konnte es mir selbst auch nicht verzeihen. Ich war jung und realisierte nicht, welche Folgen meine Abwesenheit für euch hätte. Ich hatte nur an mich selbst gedacht“, erwidert er ganz aufgewühlt und den Tränen nahe."
+      ],
+        image: "img/Bild44.1.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Streuselschnecke_essen", label: "Noch eine Frage stellen" },
+     ],
+    },
+    Streuselschnecke_essen:{
+      id: "Streuselschnecke_essen",
+      text: ["Ich wollte ihn nicht noch mehr mit meinen Fragen löchern, sodass er seine Streuselschnecke in Ruhe essen kann."
+      ],
+        image: "img/Bild45.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Streuselschnecke_essen_2", label: "weiter" },
+     ],
+    },
+    Streuselschnecke_essen_2:{
+      id: "Streuselschnecke_essen_2",
+      text: ["Nachdem er sich mit einem schwachen Lächeln die Finger sauberleckt – obwohl er nur zwei kleine Bisse von seiner Streuselschnecke genommen hatte –, sagt er: „Ich hätte gerne mit dir und deiner Schwester zusammengelebt und dachte, ich hätte noch Zeit.“"
+      ],
+        image: "img/Bild46.png",
+      hasTimer: false,
+      name: ["Anna"],
+      next: [
+        { key: "Streuselschnecke_essen_3", label: "weiter" },
+     ],
+    },
+
+
+
+
 
 
 
@@ -991,7 +1366,7 @@ const story = {
       id: "verloren",
       text: ["Weil ich mit den Gedanken irgendwo anders bin, stolppere ich. Ich spüre wie die Perosn näher kommt, doch anstatt mich zu greifen, berührt er mich an der Schulter. Sofort springe ich auf und renne weg."
       ],
-      image: "img/weihnachtsbaumBild.jpg",
+      image: "img/Bild_Verloren.png",
       hasTimer: false,
       next: [
         { key: "In_der_Wohnung_Freundin", label: "Direkt nach Hause" }
