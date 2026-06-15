@@ -546,7 +546,7 @@ const story = {
       id: "nicht_konfrontieren_2",
       text: ["deshalb drehe ich mich um und werfe einen Blick auf seinen Einkaufskorb, der lediglich mit einer Flasche Wasser und einer Packung Kaugummi gefüllt ist."
       ],
-      image: "img/Bild7.png",
+      image: "img/Bild7.1.png",
       hasTimer: false,
       name: ["Anna"],
       next: [
