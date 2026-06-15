@@ -9,14 +9,15 @@ const imageHolder = document.getElementById("story-image");
 const startButton = document.getElementById("start-button");
 const bottomRectangle = document.getElementById("bottomRectangle");
 const nameDiv = document.getElementById("name");
+const audioPlayer = new Audio();
 
 // In dieser Variable wird der Timer gespeichert, damit wir ihn auch wieder löschen können, falls der Benutzer rechtzeitig eine Entscheidung trifft.
 let timerVariable;
 let timerTime = 30000; // Zeit in Millisekunden, die der Benutzer für eine Entscheidung hat (aktuell 10 Sekunden)
 
 let useTypeWriterEffect = true; // Hier kann eingestellt werden, ob der Type-Writer Effekt verwendet werden soll oder nicht. Falls nicht, wird der Text direkt angezeigt.
-let typeWriterSpeed = 5; // Hier kann die Geschwindigkeit des Type-Writer Effekts eingestellt werden (aktuell 3 Millisekunden pro Buchstabe)
-let textDelay = 500; // Hier kann die Verzögerung zwischen den Textabschnitten eingestellt werden (aktuell 2000 Millisekunden = 2 Sekunden)
+let typeWriterSpeed = 7; // Hier kann die Geschwindigkeit des Type-Writer Effekts eingestellt werden (aktuell 3 Millisekunden pro Buchstabe)
+let textDelay = 2000; // Hier kann die Verzögerung zwischen den Textabschnitten eingestellt werden
 
 /**
  * Die Story-Datenstruktur
@@ -604,6 +605,7 @@ const story = {
       image: "img/Bild15.4.png",
       hasTimer: false,
       name: ["Freundin"],
+      audio: "img/Telefon.mp3",
       next: [
         { key: "Auf_dem_Sofa_2", label: "Weiter" }
       ]
@@ -617,6 +619,7 @@ const story = {
       image: "img/Bild16.png",
       hasTimer: false,
       name: ["Freundin"],
+      continueAudio: true,
       next: [
         { key: "Anna_geht_ran", label: "Weiter" }
       ]
@@ -629,6 +632,7 @@ const story = {
       image: "img/Bild17.png",
       hasTimer: false,
       name: ["Freundin"],
+      continueAudio: true,
       next: [
         { key: "Anna_geht_ran_2", label: "Weiter" }
       ]
@@ -799,10 +803,13 @@ const story = {
       image: "img/Bild22.png",
       hasTimer: false,
       name: ["Anna"],
-      next: [
-        { key: "nächsterTag_ja", label: "Ja" },
-        { key: "nächsterTag_nein", label: "Nein" }
-     ]
+      input: {
+        type: "text",
+        label: "Gib hier deine Antwort ein: ja oder nein",
+        answer: "ja",
+        successKey: "nächsterTag_ja",
+        failureKey: "nächsterTag_nein"
+      }
     },
     nächsterTag_ja:{
       id: "nächsterTag_ja",
@@ -1268,10 +1275,13 @@ const story = {
         image: "img/Bild41.png",
       hasTimer: false,
       name: ["Anna"],
-      next: [
-        { key: "Fragen_stellen", label: "Ja" },
-        { key: "Streuselschnecke_essen", label: "Nein" }
-     ],
+      input: {
+          type: "text",
+          label: "Gib hier deine Antwort ein: ja oder nein",
+          answer: "ja",
+          successKey: "Fragen_stellen",
+          failureKey: "Streuselschnecke_essen"
+        }
     },
     Fragen_stellen:{
       id: "Fragen_stellen",
@@ -1567,7 +1577,6 @@ function showInput(inputConfig){
     submitButton.addEventListener("click", function(){
         const userInput = inputElement.value;
         if (userInput.toLowerCase() === inputConfig.answer.toLowerCase()) {
-            alert("Die Antwort " + userInput + " ist richtig! :)")
             nextStory(inputConfig.successKey);  
         } else {
             nextStory(inputConfig.failureKey);    
@@ -1610,6 +1619,17 @@ async function nextStory(key) {
     timerContainer.innerHTML = "";
     clearTimeout(timerVariable);
 
+    // Altes Audio stoppen
+    if (!node.continueAudio) {
+      audioPlayer.pause();
+      audioPlayer.currentTime = 0;  
+    }
+
+    // Audio abspielen
+    if (node.audio){
+        audioPlayer.src = node.audio;
+        audioPlayer.play();
+    }
 
 
     // 1. Bild anzeigen
