@@ -1597,11 +1597,11 @@ function displayTimer(){
  * Diese Funktion lädt den nächsten Story-Punkt
  * @param {*} key Der Key des nächsten Story-Punkts
  */
-async function nextStory(key) {   
+async function nextStory(key) { 
   
     // In der Variable "node" wird der aktuelle Story-Punkt gespeichert, damit wir einfacher darauf zugreifen können.
     // Bsp: key = "bahnhof" -> node = story["bahnhof"] -> node.text, node.image, node.next, etc. werden vom Bahnhof geladen
-    const node = story[key];
+      const node = story[key]; 
 
     // Hier werden alle HTML-Elemnte zurückgesetzt, damit der neue Story-Punkt geladen werden kann.
     // Text und Entscheidungs-Container sollen leer sein
@@ -1668,7 +1668,7 @@ async function startStory(key) {
     // In der Variable "node" wird der aktuelle Story-Punkt gespeichert, damit wir einfacher darauf zugreifen können.
     // Bsp: key = "bahnhof" -> node = story["bahnhof"] -> node.text, node.image, node.next, etc. werden vom Bahnhof geladen
     const node = story["Familienhaus"];
-    
+
 
     if (node.image){
         imageContainer.style.display = "block";
