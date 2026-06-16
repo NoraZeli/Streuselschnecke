@@ -303,7 +303,7 @@ const story = {
       ],
       image: "img/Bild10.png",
       name: ["Anna"],
-      hasTimer: false,
+      hasTimer: true,
       next: [
         { key: "Links_abbiegen", label: "links" },
         { key: "Direkt_nach_Hause", label: "geradeaus nach Hause" },
@@ -411,7 +411,7 @@ const story = {
         "Soll ich die Abkürzung nutzen?"
       ],
       image: "img/Bild12.png",
-      hasTimer: false,
+      hasTimer: true,
       name: ["Anna"],
       next: [
         { key: "Abkürzung_nutzen", label: "ja" },
@@ -566,7 +566,7 @@ const story = {
     },
     In_der_Wohnung_Freundin_Einkaufen_2: {
       id: "In_der_Wohnung_Freundin_Einkaufen_2",
-      text: ["Denn ich weiß von früher, bevor ihre Mutter und ihr Stiefvater vor fünf Jahren weggezogen sind, wie schwierig ihre Kindheit gewesen war, und wünsche mir von ganzem Herzen, dass es ihr jetzt besser geht."
+      text: ["Denn ich weiß von früher, bevor sie mit ihrer Mutter und ihrem Stiefvater vor fünf Jahren weggezogen sind, wie schwierig ihre Kindheit gewesen war, und wünsche mir von ganzem Herzen, dass es ihr jetzt besser geht."
       ],
       image: "img/Bild15.3.png",
       hasTimer: false,
