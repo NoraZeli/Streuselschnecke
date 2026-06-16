@@ -1366,7 +1366,7 @@ const story = {
     },
     Streuselschnecke_essen_2:{
       id: "Streuselschnecke_essen_2",
-      text: ["Nachdem er sich mit einem schwachen Lächeln die Finger sauberleckt – obwohl er nur zwei kleine Bisse von seiner Streuselschnecke genommen hatte –, sagt er: „Ich hätte gerne mit dir und deiner Schwester zusammengelebt und dachte, ich hätte noch Zeit.“"
+      text: ["Nachdem er sich mit einem schwachen Lächeln die Finger sauber leckt – obwohl er nur zwei kleine Bisse von seiner Streuselschnecke genommen hatte –, sagt er: „Ich hätte gerne mit dir und deiner Schwester zusammengelebt und dachte, ich hätte noch Zeit.“"
       ],
         image: "img/Bild47.png",
       hasTimer: false,
@@ -1440,12 +1440,12 @@ const story = {
 
     verloren: {
       id: "verloren",
-      text: ["Weil ich mit den Gedanken irgendwo anders bin, stolppere ich. Ich spüre wie die Perosn näher kommt, doch anstatt mich zu greifen, berührt er mich an der Schulter. Sofort springe ich auf und renne weg."
+      text: ["Weil ich mit den Gedanken irgendwo anders bin, stolppere ich. Ich spüre wie die Person näher kommt, doch anstatt mich zu greifen, berührt er mich an der Schulter. Sofort springe ich auf und renne weg."
       ],
       image: "img/Bild_Verloren.png",
       hasTimer: false,
       next: [
-        { key: "In_der_Wohnung_Freundin", label: "Direkt nach Hause" }
+        { key: "In_der_Wohnung_Freundin_Joggen", label: "Direkt nach Hause" }
       ]
     },
 
